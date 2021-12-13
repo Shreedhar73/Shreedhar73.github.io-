@@ -1,0 +1,366 @@
+
+
+.header{
+    
+    background-color: #7DD9E8;
+
+    overflow: hidden;
+}
+.container{
+    margin: auto;
+    width: 938px;
+}
+.header-left{
+    width: 75%;
+}
+.header-left .logo{
+    
+    float: left;
+}
+
+/* .search .search-field{
+    display: inline-block;
+} */
+
+.search{
+    position: relative;
+}
+.search .search-field img{
+    height: 20px;
+    position: absolute;
+    top: 35px;
+    right: 170px;
+}
+.search .search-field input{
+    position: relative;
+    /* height: 18px; */
+    top: 35px;
+    left: 12px;
+
+
+}
+ .search-btn img{
+    position: relative;
+    top: 15px;
+    left: 315px;
+    
+}
+
+
+
+.header-left .search input[type="text"] {
+    /* position: absolute; */
+    right: 150px;
+    width: 230px;
+    height: 20px;
+    border: transparent;
+    background-color: #caeff7;
+}
+
+
+
+.header-right {
+    width: 25%;
+    float: right;
+}
+.header-right h3{
+    text-align: right;
+}
+.header-right .Info ul{
+    text-align: right;
+}
+.header-right .Info ul li{
+    display: inline;
+
+}
+
+.navbar{
+    background-color: whitesmoke;
+
+}
+.navbar-content{
+    height: 35px;
+}
+.navbar-left{
+    float: left;
+}
+.navbar-left ul li{
+    display: inline-block;
+    padding: 10px;
+}
+
+.navbar-right{
+    float: right;
+}
+.navbar-right ul li{
+    display: inline-block;
+    padding: 10px;
+    padding-right: 0;
+}
+
+.topic-box ul li{
+    display: inline-block;
+    padding:2px;
+}
+.friend-requests ul li{
+    display: inline-block;
+    padding: 2px;
+    opacity: 0.8;
+}
+
+.leftsidebar-entries{
+    float: left;
+    width: 80%;
+}
+.searches{
+    float: left;
+    width: 30%;
+
+}
+.searches h3{
+    background-color: #2FC1DA;
+
+    padding: 15px;
+}
+
+.searches ul{
+    background-color: whitesmoke;
+    overflow: hidden;
+}
+.searches ul li{
+    display:block;
+    padding: 5px 0px;
+    margin: 5px;
+    
+}
+
+
+
+
+.searches .recent-searches2 ul{
+    height: 502px;
+}
+.searches ul li :hover{
+    background-color: white;
+    cursor: pointer;
+    display: block;
+    
+    
+}
+
+.searches ul li span {
+    float: right;
+    
+}
+
+
+.entries{
+    float: right;
+    width: 64.5%;
+    padding: 20px;
+}
+.entries ul li{
+    display: inline-block;
+}
+
+.entries ul li img{
+    width: 240px;
+}
+
+.all-entries, .subscribed{
+    position: relative;
+}
+
+.all-entries p , .subscribed p{
+    position: absolute;
+    top: 10px;
+    left: 70px;
+}
+
+.all-members p, .new-entries p {
+    position: absolute;
+    top: 40px;
+    left: 34px;
+    font-size: 12px;
+}
+
+/* .all-members ,.friends, .new-entries,.new-comments :hover{
+    background-image: url("../images/bg_actibetab.png")
+} */
+.new-comments p{
+    position: absolute;
+    top: 40px;
+    left: 131px;
+    font-size: 12px;
+}
+
+.friends p {
+    position: absolute;
+    top: 40px;
+    left: 145px;
+    font-size: 12px;
+}
+
+.all-entries ul li img, .subscribed ul li img {
+    width: 100px;
+    padding-left: 18px;
+}
+
+.all-members img, .new-entries img {
+    position: absolute;
+    top: 36px;
+}
+
+.friends img, .new-comments img {
+    position: absolute;
+    top: 36px;
+    left: 105px;
+}
+
+
+
+
+.line {
+    background-color:#2FC1DA;
+
+    height: 3px;
+    border: transparent;
+    margin-top: -19px;
+}
+
+
+.posts {
+    padding-top: 0px;
+    padding: 5px 0;
+}
+
+.avatar{
+    float: left;
+    width: 16%;
+}
+.avatar img{
+    width: 100%;
+}
+
+.post-content{
+    float: right;
+    width: 82%;
+    
+}
+
+.linebreak-post{
+    height: 0.15px;
+    margin-top: 85px;
+    background-color: black;
+    opacity: 0.15;
+}
+
+.post-subcontent{
+    padding-top: 10px;
+}
+.heading{
+    font-weight: 600;
+    font-size: 14;
+}
+.author{
+    color: #2FC1DA;
+
+}
+.author:hover{
+    background-color: whitesmoke;
+    padding: 5px;
+}
+.topic{
+    color:#2FC1DA;
+
+}
+.topic:hover{
+    
+    background-color: whitesmoke;
+    padding: 5px;
+
+}
+
+
+.right-sidebar{
+    float: right;
+    width: 20%;
+}
+.right-sidebar ul{
+    height: 605px;
+}
+
+.right-sidebar h3{
+    background-color: #2FC1DA;
+
+    padding: 15px;
+}
+
+.right-sidebar ul{
+    background-color: whitesmoke;
+    overflow: hidden;
+}
+.right-sidebar ul li{
+    display: block;
+    padding: 10px;
+}
+.right-sidebar ul li :hover{
+    background-color: white;
+    padding: 5px;
+    display: block;
+}
+
+.footer{
+    background-color: #727272;
+    height: 45px;
+    margin-top: 720px;
+    color: #fff;
+    
+    
+}
+.footer-content .left-content ul li {
+    display: inline-block;
+    padding: 15px 5px;
+}
+.footer-content .left-content ul li a:hover {
+    background-color: #fff;
+    padding: 5px;
+    color: #000;
+}
+
+.footer-content .left-content ul li a {
+    color: #fff;
+}
+
+.left-content {
+    float: left;
+}
+
+.right-content {
+    float: right;
+    padding: 15px 0;
+}
+
+.left-content ul li a img {
+    padding-bottom: 4px; 
+    padding-right: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
