@@ -25,6 +25,54 @@ a{
     padding-bottom: 10px;
 }
 
+.entries ul li{
+    display: inline-block;
+}
+
+.entries ul li img{
+    width: 240px;
+}
+
+.all-entries, .subscribed{
+    position: relative;
+}
+
+.all-entries p , .subscribed p{
+    position: absolute;
+    top: 10px;
+    left: 70px;
+}
+
+.all-members p, .new-entries p {
+    position: absolute;
+    top: 40px;
+    left: 34px;
+    font-size: 12px;
+}
+
+.friends p {
+    position: absolute;
+    top: 40px;
+    left: 145px;
+    font-size: 12px;
+}
+
+.all-entries ul li img, .subscribed ul li img {
+    width: 100px;
+    padding-left: 18px;
+}
+
+.all-members img, .new-entries img {
+    position: absolute;
+    top: 36px;
+}
+
+.friends img, .new-comments img {
+    position: absolute;
+    top: 36px;
+    left: 105px;
+}
+
 .action{
     color: #2FC1DA;
 
@@ -34,4 +82,91 @@ a{
     color: red;
     font-weight: bold;
 }
+.avatar img{
+    width: 100%;
+}
 
+.post-content{
+    float: right;
+    width: 82%;
+    
+}
+
+.linebreak-post{
+    height: 0.15px;
+    margin-top: 85px;
+    background-color: black;
+    opacity: 0.15;
+}
+
+.post-subcontent{
+    padding-top: 10px;
+}
+.heading{
+    font-weight: 600;
+    font-size: 14;
+}
+.author{
+    color: #2FC1DA;
+
+}
+.author:hover{
+    text-decoration: underline;
+    padding: 5px;
+}
+.topic{
+    color:#2FC1DA;
+
+}
+.topic:hover{
+    
+    text-decoration: underline;
+    padding: 5px;
+
+}
+
+
+.right-sidebar ul{
+    height: 605px;
+}
+
+.right-sidebar h3{
+    background-color: #2FC1DA;
+
+    padding: 15px;
+}
+
+.right-sidebar ul{
+    background-color: whitesmoke;
+    overflow: hidden;
+}
+.right-sidebar ul li{
+    display: block;
+    padding: 10px;
+}
+.right-sidebar ul li :hover{
+    background-color: white;
+    padding: 5px;
+    display: block;
+}
+
+
+.footer-content .left-content ul li {
+    display: inline-block;
+    padding: 15px 5px;
+}
+.footer-content .left-content ul li a:hover {
+    background-color: #fff;
+    padding: 5px;
+    color: #000;
+}
+
+.footer-content .left-content ul li a {
+    color: #fff;
+}
+
+
+.left-content ul li a img {
+    padding-bottom: 4px; 
+    padding-right: 4px;
+}
