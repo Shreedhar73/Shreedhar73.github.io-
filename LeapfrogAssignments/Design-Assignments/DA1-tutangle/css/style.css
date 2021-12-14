@@ -57,6 +57,14 @@ a{
     font-size: 12px;
 }
 
+.new-comments p{
+    position: absolute;
+    top: 40px;
+    left: 131px;
+    font-size: 12px;
+}
+
+
 .all-entries ul li img, .subscribed ul li img {
     width: 100px;
     padding-left: 18px;
