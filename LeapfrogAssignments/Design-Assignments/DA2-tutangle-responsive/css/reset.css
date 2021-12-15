@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200&family=Roboto:wght@100&display=swap');
+ 
+ *{
+    margin: 0 auto;
+    padding: 0;
+    font-family: "Mulish", sans-serif;
+    font-size: 13px;
+}
+
+
+
+
+.clearfix {
+    clear: both;
+    content: "";
+
+}
+
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+
+@media only screen and (min-width: 968px){
+    
+    
+    .container {
+        max-width: 938px;
+        margin: 0 auto;
+    }
+    
+    .clearfix {
+        clear: both;
+        content: "";
+    
+    }
+    
+    a {
+        text-decoration: none;
+        color: #000;
+    }
+    
+    .main {
+        margin-top: 30px;
+    }
+}
