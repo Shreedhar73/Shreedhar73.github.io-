@@ -317,9 +317,7 @@
   text-align: center;
   width: 223px;
 }
-.feature-card:hover{
-  transform: scale(1.1);
-}
+
 
 .feature-top .feature-card{
   margin-top: 23px;
@@ -459,12 +457,12 @@
   border-radius: 5px;
 }
 .rating-card:hover{
-  transform: scale(1.1);
+  box-shadow:  0 0 11px rgb(14, 70, 42);
 }
 
 
 .rating-icon{
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 
@@ -591,7 +589,7 @@
   }
 
 .card-social__item:hover {
-  color: #5956e9;
+  color: #7876e2;
 }
 
 .card-social__border {
@@ -630,7 +628,7 @@
 }
 
 .customer-card:hover{
-  transform: scale(1.1);
+  box-shadow:  0 0 11px rgba(0,0,0.1);
 }
 .cus-carousel{
   position: relative;
@@ -768,11 +766,12 @@ footer h4,footer p, footer li{
   margin-bottom: 20px;
 }
 .footer-contact-email{
+  
   padding-bottom: 30px;
 }
 .footer-contact-email:hover{
-  color: #5956E9;
   transform: scale(1.05);
+  color: #5956E9;
 }
 .footer-contact-phone:hover{
   color: #5956E9;
@@ -1098,6 +1097,7 @@ footer h4,footer p, footer li{
   }
 
   .team__card {
+    margin-left: 3px;
     margin-top: 50px;
     width: 32.5%;
     margin-bottom: 40px;
