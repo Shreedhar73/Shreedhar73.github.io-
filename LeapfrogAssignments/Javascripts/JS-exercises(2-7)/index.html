@@ -10,8 +10,8 @@
         <h1> Practice Questions of JavaScript (Questions 1 to 6 are here)</h1>
         <h4> Click on View Result and Check the Console (ctrl+shift+i) for result</h4>
         
-        <div class="Question 2">
-        <h2> Q1. Write a function to render the following pattern in the console:</h2>
+        <div class="Question 1">
+        <h2> Q1. &nbsp Write a function to render the following pattern in the console:</h2>
         <pre>
         * * * * *
         * * * *
@@ -22,7 +22,9 @@
 
 
        <div class="code">
-           <pre>
+           <pre><h3>
+            Code :
+
             function displayStars(number){
                 for(var i=number;i>0;i--){
                     var stars ="";
@@ -31,10 +33,9 @@
                         stars += "* "
                     }
                     console.log(stars)
-            
                 }
             }
-            displayStars(5);
+            displayStars(5);</h3>
         </pre>
           
        </div>
@@ -42,7 +43,61 @@
     </div>
 
 
+
+    <div class="Question 2">
+      <h2> Q2. &nbsp Define an object containing information about yourself. The object needs to include 'name', 'address', 'emails', 'interests' and 'education'. The 'education' key needs to be an array of objects containing keys 'name' and 'enrolledDate'.
+        <br><br>
+        &nbsp &nbsp &nbsp   Using the object defined previously iterate over the 'education' key and print a list of output in the console as follows:
+<pre>
+        Name: ABC School of Schoolery, Date: 2000
+        Name: BCD School of Trickery, Date: 2006
+</pre></h2>
+
+<pre><h3>
+    <div class="code">
+        Code :
+
+        var aboutme = {
+            name : "Shreedhar Pandeya",
+            address : "Dang",
+            email : "Shreedharpandey000@gmail.com",
+            interests : ["travel", "music", "sports"],
+            education : [
+                {
+                    name : "Public education avademy",
+                    date: "2010"
+                },
+                {
+                    name: "DAV college",
+                    date:"2016"
+                },
+                {
+                    name:"Madan Bhandari Memorial College",
+                    date:"2018"
+                }
+            ]
+        }
+        console.log(aboutme)
+
+        aboutme.education.forEach(function(school){
+            console.log(
+                "Name: ",
+                school.name,
+                " Date: ",
+                school.date
+                );
+        })
+    </h3></pre>
+    </div>
+    <button id="Q2"> View Result</button>
+
+
+
+    </div>
+
+
     <script src="./Question1.js"></script>
+    <script src="./Question2.js"></script>
     </body>
 
 </html>
