@@ -95,9 +95,102 @@
 
     </div>
 
+    <div class="Question 3">
+        <h2>
+        Q3.  &nbsc Write a function that searches for an object by a specific key value in an array of objects:
+        <pre>
+            var fruits = [
+                {id: 1, name: 'Banana', color: 'Yellow'},
+                {id: 2, name: 'Apple', color: 'Red'}
+                ]
+
+        searchByName(fruits, 'apple');
+        Should return: {id: 2, name: 'Apple', color: 'Red'}
+
+        Also try searchByKey(fruits, 'name', 'apple');
+</pre>
+</h2>
+
+<pre><h3>
+    <div class="code">
+        Code :
+
+        //Search by name :
+        
+            searchName = prompt("Enter the name of fruit tto be searched: ");
+            function searchByName(fruits, searchName){
+                for(var i = 0; i < fruits.length;i++){
+                    if(fruits[i]['name'].toUpperCase() == searchName.toUpperCase()){
+                        return fruits[i];
+                    }
+                }
+                return "Fruit not found"
+            }
+            console.log(searchByName(fruits,searchName))
+
+         //Search by key: 
+            key = prompt("Enter the key:")
+            value = prompt("Enter the value: ")
+        
+            function searchByKey(fruits,key,value){
+                for(var i = 0; i < fruits.length; i++){
+                    if(fruits[i][key] == value){
+                        return fruits[i]
+                    }
+                }
+                return " Fruit not found"
+            }
+            console.log(searchByKey(fruits,key,value))   
+    </h3></pre>
+
+
+    </div>
+
+    <button id="Q3a">search By Name</button> <button id="Q3b">search By Key</button>
+</div>
+
+<div class="Question 4">
+
+    <h2> Q4. &nbsc Write a function that transforms an array of inputs into a new array based on a provided transformation function.
+        <pre>
+            var numbers = [1, 2, 3, 4];
+            function transform(collection, tranFunc) { …TODO }
+            var output = transform(numbers, function(num) {
+            return num * 2;
+             });
+            // output should be [2, 4, 6, 8]
+        </pre>
+    </h2>
+    
+<pre><h3>
+    <div class="code">
+        Code :
+
+        function tranFunc(num){
+            return num * 2;
+        }
+        
+        function transform(collection){
+            var finalResult = Array();
+            for(var i = 0; i< collection.length;i++){
+                var result = tranFunc(collection[i])
+                finalResult.push(result); 
+            }
+            return finalResult
+        }
+        console.log(transform(numbers))
+    </h3></pre>
+
+    <button id="Q4">View Result </button>
+
+</div>
+
+
 
     <script src="./Question1.js"></script>
     <script src="./Question2.js"></script>
+    <script src="./Question3.js"></script>
+    <script src="./Question4.js"></script>
     </body>
 
 </html>
