@@ -97,7 +97,7 @@
 
     <div class="Question 3">
         <h2>
-        Q3.  &nbsc Write a function that searches for an object by a specific key value in an array of objects:
+        Q3.  &nbsp Write a function that searches for an object by a specific key value in an array of objects:
         <pre>
             var fruits = [
                 {id: 1, name: 'Banana', color: 'Yellow'},
@@ -114,6 +114,11 @@
 <pre><h3>
     <div class="code">
         Code :
+            var fruits =[
+                {id : 1, name:"Banana", color: "Yellow"},
+                {id : 2, name:"Apple", color: "red"},
+                {id : 3, name:"Orange", color: "Orange"},
+                ]
 
         //Search by name :
         
@@ -151,7 +156,7 @@
 
 <div class="Question 4">
 
-    <h2> Q4. &nbsc Write a function that transforms an array of inputs into a new array based on a provided transformation function.
+    <h2> Q4. &nbsp  Write a function that transforms an array of inputs into a new array based on a provided transformation function.
         <pre>
             var numbers = [1, 2, 3, 4];
             function transform(collection, tranFunc) { …TODO }
@@ -165,6 +170,7 @@
 <pre><h3>
     <div class="code">
         Code :
+        var numbers = [1,2,3,4];
 
         function tranFunc(num){
             return num * 2;
@@ -179,9 +185,182 @@
             return finalResult
         }
         console.log(transform(numbers))
+    </div>
     </h3></pre>
 
     <button id="Q4">View Result </button>
+
+</div>
+
+<div class="Question 5">
+    <h2>
+        Question 5. &nbsp Write a program to sort an array of object by a target key. The original array should remain unchanged.
+        <pre>
+            var arr = [{
+                id: 1,
+                name: 'John',
+            }, {
+                id: 2,
+                name: 'Mary',
+            }, {
+                id: 3,
+                name: 'Andrew',
+            }];
+            
+            function sortBy(array, key) {
+                ...
+            }
+            
+            var sorted = sortBy(arr, 'name');
+        </pre>
+    </h2>
+
+    <pre><h3>
+        <div class="code">
+            Code :
+
+            var arr = [{
+                id: 1,
+                name: 'John',
+            }, {
+                id: 2,
+                name: 'Mary',
+            }, {
+                id: 3,
+                name: 'Andrew',
+            }];
+    
+            varKeyArray = Array()
+            newArr = Array()
+            key = prompt("Enter key to sort (type id or name): ")
+            function sortBy(array, key){
+                for (var i = 0; i < array.length; i++){
+                    varKeyArray.push(array[i][key])
+                }
+        
+                sortedArray = varKeyArray.sort();
+        
+                for (var i=0;i < array.length; i++){
+                    for (var j=0; j < array.length; j++){
+                        if (array[j][key] == varKeyArray[i]){
+                            newArr.push(array[j]);
+                        }
+                    }
+                }
+                console.log(" Old Array: " )
+                console.log(array);
+                console.log("New Array: ")
+                console.log(newArr);
+            }
+        
+            sortBy(arr, key)
+        </div>
+        </h3></pre>
+    
+        <button id="Q5">View Result </button>
+
+    </div>
+</div>
+
+
+<div class="Question 6">
+    <h2>
+        Question 6. &nbsp Write a program to normalize a given input to get the expected output.
+        <pre>
+         // From this
+            var input = {
+            '1': {
+                id: 1,
+                name: 'John',
+                children: [
+                { id: 2, name: 'Sally' },
+                { id: 3, name: 'Mark', children: [{ id: 4, name: 'Harry' }] }
+                ]
+            },
+            '5': {
+                id: 5,
+                name: 'Mike',
+                children: [{ id: 6, name: 'Peter' }]
+            }
+            };
+
+            // To this
+            var output = {
+            '1': { id: 1, name: 'John', children: [2, 3] },
+            '2': { id: 2, name: 'Sally' },
+            '3': { id: 3, name: 'Mark', children: [4] },
+            '4': { id: 4, name: 'Harry' },
+            '5': { id: 5, name: 'Mike', children: [6] },
+            '6': { id: 6, name: 'Peter' }
+            };
+        </pre>
+    </h2>
+    <pre><h3>
+        <div class="code">
+            Code :
+
+            var input = {
+                '1': {
+                  id: 1,
+                  name: 'John',
+                  children: [
+                    { id: 2, name: 'Sally' },
+                    { id: 3, name: 'Mark', children: [{ id: 4, name: 'Harry' }] }
+                  ]
+                },
+                '5': {
+                  id: 5,
+                  name: 'Mike',
+                  children: [{ id: 6, name: 'Peter' }]
+                }
+              };
+            
+            newObj = {}
+            output = {}
+            
+            
+            
+            function normalize(){
+              for (var detail in input){
+                if (input[detail]['children']){
+                  newObj['id'] = input[detail]['id'];
+                  newObj['name'] = input[detail]['name'];
+                  newObj['children'] = (input[detail]['children']).map(function (child){ return child['id'];})
+                  output[`${newObj['id']}`] = newObj
+                  newObj = {}
+                  for (var i=0; i < input[detail]['children'].length ; i++){
+                   if(input[detail]['children'][i]['children']){
+                     input[detail]['children'][i]['children'].forEach(updateFunction);
+                   }
+                    newObj['id'] = input[detail]['children'][i]['id'];
+                    newObj['name'] = input[detail]['children'][i]['name'];
+                    output[`${newObj['id']}`] = newObj;
+                    newObj = {}
+                  }
+            
+                } else {
+                  newObj['id'] = input[detail]['id'];
+                  newObj['name'] = input[detail]['name'];
+                  output[`${newObj['id']}`] = newObj
+                }
+              }
+              
+              console.log(output)
+              
+            }
+            
+            function updateFunction(item, index){
+              newObj['id'] = item['id'];
+              newObj['name'] = item['name'];
+              output[`${item['id']}`] = newObj;
+              newObj = {}
+            }
+        </div>
+        </h3></pre>
+    
+        <button id="Q6">View Result </button>
+
+
 
 </div>
 
@@ -191,6 +370,8 @@
     <script src="./Question2.js"></script>
     <script src="./Question3.js"></script>
     <script src="./Question4.js"></script>
+    <script src="./Question5.js"></script>
+    <script src="./Question6.js"></script>
     </body>
 
 </html>

@@ -9,7 +9,7 @@ document.getElementById("Q4").onclick = function(){
 }
 
 function transform(collection){
-    var finalResult = Array();
+    var finalResult = [];
     for(var i = 0; i<collection.length;i++){
         var result = tranFunc(collection[i])
         finalResult.push(result); 
