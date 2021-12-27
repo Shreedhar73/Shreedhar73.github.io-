@@ -104,7 +104,7 @@
         var boxes = [];
 
         //change value of ball numbers to increase or decrease the numbe rof balls
-        ballNumbers = 50;
+        ballNumbers = getRandomValues(25,50);
         
 
         this.init = function () {
