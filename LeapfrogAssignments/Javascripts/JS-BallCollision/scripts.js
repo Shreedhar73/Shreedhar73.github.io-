@@ -34,8 +34,10 @@
     function Box(x, y, viewport) {
         this.x = x;
         this.y = y;
-        this.boundaryWidth = 65;
-        this.boundaryHeight = 65 ;
+
+        //boundary for balls.
+        this.boundaryWidth = 35;
+        this.boundaryHeight =30 ;
 
         this.speed = 5;
 
@@ -53,7 +55,7 @@
             this.balls = document.createElement('div');
             
             this.balls.style.background = colors[getRandomValues(0,7)];
-            this.radius = getRandomValues(15,20);
+            this.radius = getRandomValues(5,10);
             
             this.balls.style.height = this.radius*4+"px";
             this.balls.style.width = this.radius*4+"px";
@@ -102,7 +104,7 @@
         var boxes = [];
 
         //change value of ball numbers to increase or decrease the numbe rof balls
-        ballNumbers = 10;
+        ballNumbers = 50;
         
 
         this.init = function () {
