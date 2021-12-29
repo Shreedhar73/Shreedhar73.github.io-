@@ -1,0 +1,70 @@
+.info{
+    float: left;
+    
+    margin-left: 100px;
+    padding-right: 125px;
+}
+
+.info p{
+    
+    padding-top: 250px;
+    bottom: 150px;
+    
+}
+.main-container {
+    display: inline-block;
+}
+
+
+.game {
+    width: 800px;
+    height: 750px;
+    background-image: url("../img/road1.png");
+    background-size: 800px;
+    background-repeat: repeat-y;
+}
+
+.score {
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+.new-car {
+    position: absolute;
+}
+
+.opponent-car {
+    width: 60px;
+    height: 90px;
+}
+
+.player-car {
+    width: 80px;
+    height: 90px;
+}
+
+.game-name {
+    position: absolute;
+    color: white;
+    font-size: larger;
+    background-color: black;
+    padding: 10px 40px;
+    top: 40%;
+    left: 50%;
+    padding: 4px 20px;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.play-game {
+    position: absolute;
+    font-size: 18px;
+    margin-top: 20px;
+    background-color: green;
+    cursor: pointer;
+    padding: 10px 20px;
+    left: 30px;
+    width: 190px;
+}
