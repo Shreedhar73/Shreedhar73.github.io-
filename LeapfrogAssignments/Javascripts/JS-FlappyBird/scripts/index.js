@@ -64,7 +64,7 @@ var drawPipe = function(x, y){
 	ctx.drawImage(pipeDown, x, y);
 	ctx.drawImage(pipe, x, y + 168 + gap, pipe.width, height - 112);
 	ctx.drawImage(pipeUp, x, y + 144 + gap);
-	if(x < birdPos + 32 && x + 50 > birdPos && (birdY < y + 144 || birdY + 22 > y  + gap)){
+	if(x < birdPos + 32 && x + 50 > birdPos && (birdY < y + 22 || birdY + 22 > y  + 144+gap)){
 		clearInterval(animation);
 		death = 1;
 	}
