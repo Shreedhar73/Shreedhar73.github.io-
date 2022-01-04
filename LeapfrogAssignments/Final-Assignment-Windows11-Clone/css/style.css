@@ -188,7 +188,7 @@ body{
     width: 50px;
    
     
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     
 }
 .dicon:hover{
@@ -206,15 +206,28 @@ body{
     background-size: cover;
 }
 
+.mypc{
+    position: relative;
+    background-image: url("../img/thispc.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.vscodeI{
+    position: relative;
+    background-image: url("../img/vscode.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .startmenu{
-    position: relative;
-
-    margin-right:  35%;
-    top: -80px;
+    position: absolute;
 
     
-    float: right;
+    top: 25%;
+    left: 35%;
+    
+    
     width: 30%;
     height: 620px;
     background-color: rgb(34, 34, 73);
