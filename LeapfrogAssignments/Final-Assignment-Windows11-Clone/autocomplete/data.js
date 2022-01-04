@@ -1,0 +1,1 @@
+export const data = ["red", "blue", "green", "yellow", "purple", "orange", "black", "white", "brown", "apple", "ball","cat"];
