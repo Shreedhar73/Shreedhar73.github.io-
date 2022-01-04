@@ -7,9 +7,10 @@ startmenu.className = "startmenu";
 
 let powerOff = document.createElement("div");
 powerOff.className = "powerOff";
-powerOff.style.height = "50px";
-powerOff.style.width = "50px";
-powerOff.style.backgroundColor = "black";
+powerOff.style.height = "30px";
+powerOff.style.width = "30px";
+powerOff.style.backgroundImage = "url(../img/shutdown.png)";
+
 
 
 
@@ -22,10 +23,10 @@ startmenu.appendChild(powerOff);
 
 
 startbtn.addEventListener("click", () =>{
-    if(startmenu.style.display == 'none'){
-        startmenu.style.display = 'block';
-    }else{
+    if(startmenu.style.display == 'block'){
         startmenu.style.display = 'none';
+    }else{
+        startmenu.style.display = 'block';
     }
   
 })
