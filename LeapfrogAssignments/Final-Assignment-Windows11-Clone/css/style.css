@@ -13,7 +13,7 @@ body{
     background-size: cover;
     overflow: hidden;
     height: 100%;
-    filter: brightness(0%);
+    /* filter: brightness(0%); */
     
     
    
@@ -43,7 +43,7 @@ body{
 
 .searchbtn{
     position: absolute;
-    border: 2px solid red;
+    
     background: transparent;
     bottom: 13px;
     width: 30px;
@@ -55,7 +55,7 @@ body{
 
 .switchbtn{
     position: absolute;
-    border: 2px solid red;
+   
     background: transparent;
     bottom: 13px;
     width: 30px;
@@ -66,7 +66,7 @@ body{
 }
 .widgetbtn{
     position: absolute;
-    border: 2px solid red;
+   
     background: transparent;
     bottom: 13px;
     width: 30px;
@@ -78,7 +78,7 @@ body{
 
 .edgebtn{
     position: absolute;
-    border: 2px solid red;
+    
     background: transparent;
     bottom: 13px;
     width: 30px;
@@ -90,7 +90,7 @@ body{
 
 .vscode{
     position: absolute;
-    border: 2px solid red;
+    
     background: transparent;
     bottom: 13px;
     width: 30px;
@@ -101,14 +101,15 @@ body{
 }
 
 .btnhover:hover{
-    background: rgb(20, 20, 20);
+ 
     
-    opacity: 0.2;
-    display: block;
+    /* opacity: 0.2; */
+    color: rgb(14, 13, 13);
+    box-shadow: 0 5px 15px rgba(15, 125, 228, 0.4);
 }
 
 .taskbarright {
-    border: 2px solid red;
+   
     position: absolute;
     justify-self: flex-end;
     right: 0;
@@ -119,7 +120,7 @@ body{
 
 .more{
     position: absolute;
-    border: 2px solid red;
+  
     background: transparent;
     bottom: 13px;
     width: 30px;
@@ -130,7 +131,7 @@ body{
 }
 .wifi{
     position: absolute;
-    border: 2px solid red;
+    
     background: transparent;
     bottom: 13px;
     width: 30px;
@@ -141,7 +142,7 @@ body{
 }
 .sound{
     position: absolute;
-    border: 2px solid red;
+    
     background: transparent;
     bottom: 13px;
     width: 30px;
@@ -152,7 +153,7 @@ body{
 }
 .language{
     position: absolute;
-    border: 2px solid red;
+   
     background: transparent;
     bottom: 13px;
     width: 30px;
@@ -163,7 +164,9 @@ body{
 }
 .datetime{
     position: absolute;
-    border: 2px solid red;
+    
+    z-index: 10001;
+    
     background: transparent;
     bottom: 13px;
     width: 65px;
@@ -174,7 +177,7 @@ body{
 }
 .notifications{
     position: absolute;
-    border: 2px solid red;
+   
     background: transparent;
     bottom: 13px;
     width: 40px;
@@ -196,6 +199,7 @@ body{
     background-color: rgb(71, 65, 65);
     opacity: 0.8;
     display: block;
+    
 
 
 }
@@ -248,6 +252,7 @@ body{
     position: relative;
     top: 87%;
     left: 85%;
+    background-image: url(../img/shutdown.png);
 
     background-color: rgb(202, 191, 191);
     background-size: cover;
@@ -256,5 +261,33 @@ body{
     
     
 }
+
+
+#time{
+    position: absolute;
+    background-color: #f3f3f3;
+   bottom: 30px;
+    left: 92.6%;
+    height: 19px;
+    width: 62px;
+    font-size: 12px;
+    
+   z-index: 1001;
+    
+}
+
+#date{
+    position: absolute;
+    background-color: #f3f3f3;
+   bottom: 13px;
+    left: 92.6%;
+    height: 19px;
+    width: 62px;
+    font-size: 12px;
+    
+   z-index: 1001;
+    
+}
+
 
 

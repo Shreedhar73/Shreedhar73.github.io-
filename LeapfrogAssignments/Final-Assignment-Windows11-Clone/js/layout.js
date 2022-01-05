@@ -9,7 +9,7 @@ let powerOff = document.createElement("div");
 powerOff.className = "powerOff";
 powerOff.style.height = "30px";
 powerOff.style.width = "30px";
-powerOff.style.backgroundImage = "url(../img/shutdown.png)";
+// powerOff.style.backgroundImage = "url(../img/shutdown.png)";
 
 
 
