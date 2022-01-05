@@ -129,7 +129,18 @@ body{
     color: #000;
 
 }
-.wifi{
+
+.utils{
+    position: absolute;
+    background: transparent;
+    bottom: 13px;
+    
+    height: 72%;
+    width: 5.5%;
+    left: 87%;
+
+}
+/* .wifi{
     position: absolute;
     
     background: transparent;
@@ -161,7 +172,7 @@ body{
     left:90.6% ;
     color: #000;
 
-}
+} */
 .datetime{
     position: absolute;
     
@@ -227,16 +238,13 @@ body{
 
 .startmenu{
     position: absolute;
-
-    
-    top: 25%;
+    top: 5%;
     left: 35%;
-    
-    
     width: 30%;
     height: 620px;
     background-color: rgb(34, 34, 73);
     opacity: 0.91;
+    
     /* background-image: url("../img/startmenu.PNG");
     background-repeat: no-repeat;
     background-size: cover; */
@@ -288,6 +296,59 @@ body{
    z-index: 1001;
     
 }
+
+
+.utilsDiv{
+    position: relative;
+    margin-left: auto;
+    top: 85%;
+    left: 25%;
+    
+    width: 22%;
+    height: 480px;
+    background-color: rgb(34, 34, 73);
+    opacity: 0.91;
+    transition: left 1s;
+    /* background-image: url("../img/startmenu.PNG");
+    background-repeat: no-repeat;
+    background-size: cover; */
+    border-radius: 15px;
+    
+    text-align: center;
+    align-items: center;
+    
+   
+}
+
+.bSlider {
+    position: relative;
+    top: 90%;
+    margin: auto;
+    width: 70%;
+    background: #f3f3f3;
+    border-radius: 10px;
+    left: 25px;
+    padding: 5px;
+    height: 30px;
+  }
+
+  .bSlider img{
+      position: relative;
+      float: left;
+      left: -40px;
+      bottom: 20px;
+  }
+  #brightness-range {
+    width: 100%;
+   
+    background: #131212;
+    height: 5px;
+    outline: none;
+    cursor: pointer;    
+  }
+  
+
+
 
 
 
