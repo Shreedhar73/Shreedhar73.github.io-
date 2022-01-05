@@ -238,7 +238,7 @@ body{
 
 .startmenu{
     position: absolute;
-    top: 5%;
+    /* top: 5%; */
     left: 35%;
     width: 30%;
     height: 620px;
@@ -252,7 +252,8 @@ body{
     
     text-align: center;
     align-items: center;
-    display: none;
+    transition: top 1s ;
+    /* display: none; */
 }
 
 
@@ -302,7 +303,7 @@ body{
     position: relative;
     margin-left: auto;
     top: 85%;
-    left: 25%;
+    /* left: 25%; */
     
     width: 22%;
     height: 480px;
@@ -315,8 +316,7 @@ body{
     border-radius: 15px;
     
     text-align: center;
-    align-items: center;
-    
+    align-items: center;  
    
 }
 
@@ -347,6 +347,44 @@ body{
     cursor: pointer;    
   }
   
+
+  .folder{
+      position: absolute;
+      top: 0px;
+      height: 105.4%;
+      
+      background-color: red;
+      display: none;
+      
+  }
+
+  .folder .taskbar-mypc{
+      width: 100%;
+      height: 30px;
+      background-color: #414358;
+      top: 0px;
+  }
+
+  .folder .name{
+      float: left;
+      padding: 5px;
+  }
+  .folder .right-icons{
+      display: flex;
+      float: right;
+      
+  }
+  .right-icons .icon{
+      height: 35px;
+      width: 35px;
+      padding: 3px;
+  }
+
+  .right-icons .icon:hover{
+      
+      /* background-color: rgb(121, 118, 118); */
+      box-shadow: 0 5px 15px rgba(188, 134, 241, 0.918);
+  }
 
 
 

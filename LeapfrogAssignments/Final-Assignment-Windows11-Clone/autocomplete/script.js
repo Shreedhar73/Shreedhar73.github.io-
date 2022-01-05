@@ -1,4 +1,4 @@
-const data = ["red", "blue", "green", "yellow", "purple", "orange", "black", "white", "brown", "apple", "ball","cat"];
+const data = ["red", "blue", "green", "yellow", "purple", "orange", "black", "white", "brown", "apple", "ball","cat","oil","elephant","airplane","linkedin","ios","android",];
 const autocomplete = document.getElementById("autocomplete");
 const resultsHTML = document.getElementById("results");
 
