@@ -1,12 +1,18 @@
+
 const data = ["red", "blue", "green", "yellow", "purple", "orange", "black", "white", "brown", "apple", "ball","cat","oil","elephant","airplane","linkedin","ios","android",];
 const autocomplete = document.getElementById("autocomplete");
 const resultsHTML = document.getElementById("results");
 
 autocomplete.oninput = function () {
   let results = [];
-  const userInput = this.value;
+  let userInput = this.value;
   resultsHTML.innerHTML = "";
   if (userInput.length > 0) {
+    debugger;
+    if (userInput.includes(" ")) {
+      userInput = userInput.split(" ").pop();
+      userInput = userInput == "" ? "#" : userInput;
+    }
     results = getResults(userInput);
     resultsHTML.style.display = "block";
     for (i = 0; i < results.length; i++) {
@@ -26,7 +32,13 @@ function getResults(input) {
 }
 
 resultsHTML.onclick = function (event) {
+  debugger;
+  let userInput = autocomplete.value;
+  let inputArray = userInput.split(" ");
   const setValue = event.target.innerText;
-  autocomplete.value = setValue;
+  inputArray.pop();
+  inputArray.push(setValue);
+  userInput = inputArray.join(" ");
+  autocomplete.value = userInput;
   this.innerHTML = "";
 };
