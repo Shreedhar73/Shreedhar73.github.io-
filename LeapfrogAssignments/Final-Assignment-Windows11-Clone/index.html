@@ -1,81 +1,286 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Windows 11 - Clone</title>
-        <link rel="stylesheet" href="./css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Windows 11 - Clone</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- task bar starts here -->
 
-    </head>
-    <body>
-        <div class="taskbar">
-            <div class=" windowbtn btnhover">
+    <div class="taskbar">
+      <!-- first section starts here -->
+      <div class="1st-section"></div>
 
-            </div>
-            <div class="searchbtn btnhover">
-            </div>
-            <div class="switchbtn btnhover"></div>
-            <div class="widgetbtn btnhover"></div>
-            <div class="edgebtn btnhover"></div>
-            <div class="vscode btnhover"></div>
+      <!-- first section ends here -->
 
-           
-
-            <img src="./img/icons.PNG">
-           
-            <img class="taskbarright" src="./img/taskbarright.PNG">
-            <div class="more btnhover"></div>
-            <div class="utils btnhover">
-                <div class="wifi btnhover"></div>
-                <div class="sound btnhover"></div>
-                <div class="language btnhover"></div>
-            </div>
-           
-            <div class="datetime btnhover"></div>
-                <div id = "time" ></div>
-                
-                <div id="date"></div>
-            <div class="notifications btnhover"></div>
-
-
+      <!-- second section starts here -->
+      <div class="second-section">
+        <!-- window icon rendering starts here -->
+        <div class="windowbtn btnhover">
+          <svg
+          
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 48 48"
+            width="24px"
+            height="24px"
+          >
+            <path fill="#1976d2" d="M6,6h17v17H6V6z" />
+            <path fill="#1976d2" d="M25.042,22.958V6H42v16.958H25.042z" />
+            <path fill="#1976d2" d="M6,25h17v17H6V25z" />
+            <path fill="#1976d2" d="M25,42V25h17v17H25z" />
+          </svg>
         </div>
-        <div class="desktop">
-            <div class = "mypc dicon"></div>
-            <div class="camera dicon"></div>
+        <!-- window icon rendering ends here -->
 
-            
-            <div class = "recyclebin  dicon"></div>
-            <div class="vscodeI dicon"></div>
-           
+        <!-- search icon button rendering starts here -->
 
+        <div class="searchbtn btnhover">
+          <svg
+          class="search"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="24px"
+            height="24px"
+          >
+            <path
+              d="M21.414,18.586c-0.287-0.287-1.942-1.942-2.801-2.801c-0.719,1.142-1.686,2.109-2.828,2.828	c0.859,0.859,2.514,2.514,2.801,2.801c0.781,0.781,2.047,0.781,2.828,0C22.195,20.633,22.195,19.367,21.414,18.586z"
+            />
+            <circle cx="11" cy="11" r="9" opacity=".35" />
+          </svg>
+          <!-- <i class="fal fa-search"></i> -->
         </div>
-        <div class="folder fsize">
-            <div class="taskbar-mypc">
-                <div class="name">File Explorer</div>
-                <div class = "right-icons">
-                <div class = "minimize icon"> <img src="./img/minimize.png" alt="minimize"></div>
-                <div class = "maximize icon"><img src="./img/maximize.png" alt="close"></div>
-                <div class = "close icon"><img src="./img/close.png" alt="close"></div>
-                </div>
-            </div>
+        <!-- search icon button rendering ends here -->
+
+        <!-- switch icon button rendering start here -->
+        <div class="switchbtn btnhover">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 40 40"
+            width="24px"
+            height="24px"
+          >
+            <path
+              fill="#b6dcfe"
+              d="M10,37.5c-4.136,0-7.5-3.364-7.5-7.5V10c0-4.136,3.364-7.5,7.5-7.5h20c4.136,0,7.5,3.364,7.5,7.5v20 c0,4.136-3.364,7.5-7.5,7.5H10z"
+            />
+            <path
+              fill="#4788c7"
+              d="M30,3c3.86,0,7,3.14,7,7v20c0,3.86-3.14,7-7,7H10c-3.86,0-7-3.14-7-7V10c0-3.86,3.14-7,7-7H30 M30,2H10c-4.418,0-8,3.582-8,8v20c0,4.418,3.582,8,8,8h20c4.418,0,8-3.582,8-8V10C38,5.582,34.418,2,30,2L30,2z"
+            />
+            <path
+              fill="#98ccfd"
+              d="M30,36H10c-3.314,0-6-2.686-6-6V10c0-3.314,2.686-6,6-6h20c3.314,0,6,2.686,6,6v20 C36,33.314,33.314,36,30,36z"
+            />
+            <g>
+              <path
+                fill="#dff0fe"
+                d="M30,35H10c-2.761,0-5-2.239-5-5V10c0-2.761,2.239-5,5-5h20c2.761,0,5,2.239,5,5v20 C35,32.761,32.761,35,30,35z"
+              />
+            </g>
+          </svg>
+        </div>
+        <!-- switch icon button rendering ends here -->
+
+        <div class="microsoftbtn btnhover">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 48 48"
+            width="24px"
+            height="24px"
+          >
+            <linearGradient
+              id="WX5n~0dYBett_wj6JwCiNa"
+              x1="4"
+              x2="44"
+              y1="12.5"
+              y2="12.5"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop offset=".176" stop-color="#cdcdcd" />
+              <stop offset=".244" stop-color="#b5b5b5" />
+              <stop offset=".274" stop-color="#b5b5b5" />
+              <stop offset=".308" stop-color="#bdbdbd" />
+              <stop offset=".349" stop-color="#cdcdcd" />
+              <stop offset=".638" stop-color="#cdcdcd" />
+              <stop offset=".668" stop-color="#c5c5c5" />
+              <stop offset=".702" stop-color="#b5b5b5" />
+              <stop offset=".76" stop-color="#b5b5b5" />
+              <stop offset=".78" stop-color="#bdbdbd" />
+              <stop offset=".803" stop-color="#cdcdcd" />
+            </linearGradient>
+            <rect
+              width="40"
+              height="3"
+              x="4"
+              y="11"
+              fill="url(#WX5n~0dYBett_wj6JwCiNa)"
+            />
+            <linearGradient
+              id="WX5n~0dYBett_wj6JwCiNb"
+              x1="6.438"
+              x2="25.707"
+              y1="-.499"
+              y2="29.446"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop offset="0" stop-color="#fcfcfc" />
+              <stop offset=".495" stop-color="#f4f4f4" />
+              <stop offset=".946" stop-color="#e8e8e8" />
+              <stop offset="1" stop-color="#e8e8e8" />
+            </linearGradient>
+            <path
+              fill="url(#WX5n~0dYBett_wj6JwCiNb)"
+              d="M42,41H6c-1.105,0-2-0.895-2-2V14h40v25C44,40.105,43.105,41,42,41z"
+            />
+            <polygon fill="#f2f2f2" points="16,1 13,4 13,14 16,14" />
+            <polygon fill="#f2f2f2" points="32,1 35,4 35,14 32,14" />
+            <rect width="16" height="3" x="16" y="1" fill="#ccc" />
+            <rect width="6.5" height="6.5" x="17" y="20" fill="#f25022" />
+            <rect width="6.5" height="6.5" x="24.5" y="20" fill="#7fba00" />
+            <rect width="6.5" height="6.5" x="17" y="27.5" fill="#00a4ef" />
+            <rect width="6.5" height="6.5" x="24.5" y="27.5" fill="#ffb900" />
+            <linearGradient
+              id="WX5n~0dYBett_wj6JwCiNc"
+              x1="24"
+              x2="24"
+              y1="37.956"
+              y2="41.21"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop offset="0" stop-color="#e8e8e8" />
+              <stop offset=".332" stop-color="#e0e0e0" />
+              <stop offset=".848" stop-color="#cacaca" />
+              <stop offset="1" stop-color="#c2c2c2" />
+            </linearGradient>
+            <path
+              fill="url(#WX5n~0dYBett_wj6JwCiNc)"
+              d="M42,41H6c-1.105,0-2-0.895-2-2v-1h40v1C44,40.105,43.105,41,42,41z"
+            />
+          </svg>
         </div>
 
+        <!-- edge icon button rendering starts here -->
 
-        <div class="cameradiv fsize">
-            <div class="taskbar-camera">
-                <div class="name">Camera</div>
-                <div class = "right-icons">
-                <div class = "minimize icon"> <img src="./img/minimize.png" alt="minimize"></div>
-                <div class = "maximize icon"><img src="./img/maximize.png" alt="close"></div>
-                <div class = "close icon"><img src="./img/close.png" alt="close"></div>
-                </div>
-            </div>
+        <div class="edgebtn btnhover">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 48 48"
+            width="24px"
+            height="24px"
+          >
+            <path
+              fill="#1e88e5"
+              d="M40.69,35.42c-9.15,11.88-21.41,8.8-26.23,6.1 c-7.35-4.11-12.5-13.68-9.44-23.25c0.9-2.82,2.27-5.23,3.98-7.23c1.67,0.13,3.65,0.13,6-0.04c14-1,18,11,17,14 c-0.51,1.53-2.32,2.02-3.97,2.13c0.16-0.22,0.36-0.54,0.64-1.02c0.87-1.54,0.98-4.49-1.73-6.27c-2.61-1.7-5.43-0.65-6.88,1.28 c-1.45,1.92-0.88,4.81-0.37,6.09c2.2,5.52,6.26,6.95,9.02,7.78c2.76,0.83,6.86,0.71,9.05-0.19c2.18-0.91,2.8-1.43,3.22-0.97 C41.41,34.29,41.11,34.82,40.69,35.42z"
+            />
+            <path
+              fill="#0d47a1"
+              d="M40.732,35.42c-3.48,4.52-7.41,6.87-11.21,7.91 c-0.03,0.01-0.06,0.01-0.08,0.02c-2.2,0.42-3.95,0.08-5.85-0.29c-3.09-0.6-7.35-4.01-8.38-10.18c-0.88-5.31,1.63-9.81,5.59-12.54 c-0.26,0.24-0.49,0.5-0.7,0.78c-1.45,1.92-0.88,4.81-0.37,6.09c2.2,5.52,6.26,6.95,9.02,7.78c2.76,0.83,6.86,0.71,9.05-0.19 c2.18-0.91,2.8-1.43,3.22-0.97C41.452,34.29,41.152,34.82,40.732,35.42z"
+            />
+            <path
+              fill="#00e5ff"
+              d="M26.94,4.25c0.02,0.26,0.03,0.54,0.03,0.81c0,3.78-1.75,7.14-4.48,9.32 c-1.02-0.52-2.21-0.94-3.65-1.22c-4.07-0.78-10.63,1.1-13.3,5.77c-0.88,1.53-1.25,3.1-1.41,4.55c0.04-1.71,0.33-3.46,0.89-5.21 C8.31,8.01,17.86,3.05,26.94,4.25z"
+            />
+            <path
+              fill="#00e676"
+              d="M41.4,27.89c-2.76,2.78-6.27,2.86-8.67,2.73 c-2.41-0.12-3.59-0.82-4.69-1.5c-1.11-0.69-0.48-1.37-0.37-1.52c0.11-0.15,0.38-0.41,1-1.49c0.29-0.51,0.5-1.18,0.54-1.91 c4.62-3.43,7.96-8.49,9.16-14.34c2.92,2.95,4.3,6.21,4.79,7.61C44.04,19.99,44.71,24.56,41.4,27.89z"
+            />
+            <path
+              fill="#1de9b6"
+              d="M38.37,9.85v0.01c-1.2,5.85-4.54,10.91-9.16,14.34c0.03-0.42,0-0.87-0.1-1.32 c0-0.02-0.01-0.04-0.01-0.05c-0.25-1.47-0.99-3.33-2.22-4.77c-1.22-1.44-2.52-2.73-4.39-3.68c2.73-2.18,4.48-5.54,4.48-9.32 c0-0.27-0.01-0.55-0.03-0.81c0.4,0.05,0.79,0.11,1.19,0.19C32.74,5.33,36.04,7.49,38.37,9.85z"
+            />
+          </svg>
         </div>
-        
+        <!-- search icon button rendering ends here -->
 
-        
-    </body>
-    <script src="./js/layout.js"></script>
-    <script src="./js/datetime.js"></script>
-    <script src="./js/brightness.js"></script>
-    <script src="./js/camera.js"></script>
+        <!-- Vs code icon button rendering starts here -->
+
+        <div class="vscode btnhover">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 48 48"
+            width="24px"
+            height="24px"
+          >
+            <path
+              fill="#29b6f6"
+              d="M44,11.11v25.78c0,1.27-0.79,2.4-1.98,2.82l-8.82,4.14L34,33V15L33.2,4.15l8.82,4.14 C43.21,8.71,44,9.84,44,11.11z"
+            />
+            <path
+              fill="#0277bd"
+              d="M9,33.896L34,15V5.353c0-1.198-1.482-1.758-2.275-0.86L4.658,29.239 c-0.9,0.83-0.849,2.267,0.107,3.032c0,0,1.324,1.232,1.803,1.574C7.304,34.37,8.271,34.43,9,33.896z"
+            />
+            <path
+              fill="#0288d1"
+              d="M9,14.104L34,33v9.647c0,1.198-1.482,1.758-2.275,0.86L4.658,18.761 c-0.9-0.83-0.849-2.267,0.107-3.032c0,0,1.324-1.232,1.803-1.574C7.304,13.63,8.271,13.57,9,14.104z"
+            />
+          </svg>
+        </div>
+        <!-- Vs code icon button rendering ends here -->
+      </div>
+      <!-- second sections ends here -->
+      <div class="third-section">
+        <!-- <img class="taskbarright" src="./img/taskbarright.PNG" /> -->
+        <div class="more btnhover"></div>
+        <div class="utils btnhover">
+          <div class="wifi btnhover"></div>
+          <div class="sound btnhover"></div>
+          <div class="language btnhover"></div>
+        </div>
+
+        <div class="datetime btnhover"></div>
+        <div id="time"></div>
+
+        <div id="date"></div>
+        <div class="notifications btnhover"></div>
+      </div>
+    </div>
+
+    <!-- task bar ends here -->
+
+    <div class="desktop">
+      <div class="mypc dicon"></div>
+      <div class="camera dicon"></div>
+
+      <div class="recyclebin dicon"></div>
+      <div class="vscodeI dicon"></div>
+    </div>
+    <div class="folder fsize">
+      <div class="taskbar-mypc">
+        <div class="name">File Explorer</div>
+        <div class="right-icons">
+          <div class="minimize icon">
+            <img src="./img/minimize.png" alt="minimize" />
+          </div>
+          <div class="maximize icon">
+            <img src="./img/maximize.png" alt="close" />
+          </div>
+          <div class="close icon">
+            <img src="./img/close.png" alt="close" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cameradiv fsize">
+      <div class="taskbar-camera">
+        <div class="name">Camera</div>
+        <div class="right-icons">
+          <div class="minimize icon">
+            <img src="./img/minimize.png" alt="minimize" />
+          </div>
+          <div class="maximize icon">
+            <img src="./img/maximize.png" alt="close" />
+          </div>
+          <div class="close icon">
+            <img src="./img/close.png" alt="close" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./js/layout.js"></script>
+  <script src="./js/datetime.js"></script>
+  <script src="./js/brightness.js"></script>
+  <script src="./js/camera.js"></script>
 </html>

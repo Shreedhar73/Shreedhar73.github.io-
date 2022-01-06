@@ -10,7 +10,7 @@ let powerOff = document.createElement("div");
 powerOff.className = "powerOff";
 powerOff.style.height = "30px";
 powerOff.style.width = "30px";
-// powerOff.style.backgroundImage = "url(../img/shutdown.png)";
+powerOff.style.backgroundImage = "url(../img/shutdown.png)";
 
 document.body.appendChild(startmenu);
 startmenu.appendChild(powerOff);
@@ -107,7 +107,7 @@ maximize.addEventListener("click",()=>{
     folder.style.height = "60%";
 }else{
     folder.style.width = "100%";
-    folder.style.height = "105.4%";
+    folder.style.height = "95.5%";
 }
 
 })
