@@ -112,5 +112,10 @@ maximize.addEventListener("click",()=>{
 
 })
 
+        
+
+
+
+
 
 
