@@ -3,8 +3,18 @@ let body = document.querySelector("body");
 
 let startbtn = document.getElementsByClassName("windowbtn")[0];
 let startmenu = document.createElement("div");
+let iconsDiv = document.createElement("div");
+let searchDiv = document.createElement("div");
+let searchField = document.createElement("input")
 startmenu.className = "startmenu";
 startmenu.style.top = "125%";
+
+iconsDiv.className = "icons-div"
+searchDiv.className="search-div"
+searchField.className= "search-field"
+let powerDiv = document.createElement("div");
+searchField.placeholder="Type here to search"
+powerDiv.className="power-div";
 
 let powerOff = document.createElement("div");
 powerOff.className = "powerOff";
@@ -13,14 +23,16 @@ powerOff.style.width = "30px";
 powerOff.style.backgroundImage = "url(../img/shutdown.png)";
 
 document.body.appendChild(startmenu);
-startmenu.appendChild(powerOff);
+powerDiv.appendChild(powerOff);
+searchDiv.appendChild(searchField);
+startmenu.append(searchDiv,iconsDiv,powerDiv);
 
 startbtn.addEventListener("click", () =>{
     if(startmenu.style.top == '125%'){
         if(window.innerHeight >= 655){
         startmenu.style.top = '15%';
         }else{
-            startmenu.style.top = '-4%';
+            startmenu.style.top = '4.8%';
         }
         startbtn.style.color = "rgb(14,13,13)";
         startbtn.style.boxShadow = "0 5px 15px rgba(15,125,228,0.5)";
@@ -66,7 +78,7 @@ brightnessIcon.src = "./img/brightness.png";
 let brange = document.createElement("input");
 brange.type = "range";
 brange.id = "brightness-range";
-brange.min ="0";
+brange.min ="30";
 brange.max="100";
 brange.value ="100";
 brange.onchange = function(){brightness(brange)};
@@ -124,6 +136,99 @@ maximize.addEventListener("click",()=>{
 }
 
 })
+
+
+
+
+//windows icons list
+
+const iconList = [
+    { id: 1, src: "img/icons8-microsoft-edge-48.png", name: "edge" },
+    { id: 2, src: "img/icons8-microsoft-word-2019-50.png", name: "Word" },
+    {
+      id: 3,
+      src: "img/icons8-microsoft-excel-2019-50.png",
+      name: "Excel",
+    },
+    {
+      id: 4,
+      src: "img/icons8-mail-50.png",
+      name: "Mail",
+    },
+    {
+      id: 5,
+      src: "img/icons8-calendar-50.png",
+      name: "Calendar",
+    },
+    {
+      id: 6,
+      src: "img/icons8-microsoft-store-50.png",
+      name: "Miscrosoft Store",
+    },
+    {
+      id: 7,
+      src: "img/icons8-photos-50.png",
+      name: "Photos",
+    },
+    {
+      id: 8,
+      src: "img/icons8-settings-50.png",
+      name: "Setting",
+    },
+    {
+      id: 9,
+      src: "img/icons8-microsoft-office-2019-48.png",
+      name: "Office",
+    },
+    {
+      id: 10,
+      src: "img/icons8-microsoft-solitaire-collection-50.png",
+      name: "Solitaire",
+    },
+    {
+      id: 11,
+      src: "img/icons8-spotify-50.png",
+      name: "Spotify",
+    },
+    {
+      id: 12,
+      src: "img/icons8-whatsapp-48.png",
+      name: "WhatsAPp",
+    },
+    {
+      id: 13,
+      src: "img/icons8-microsoft-todo-2019-50.png",
+      name: "Todo",
+    },
+    {
+      id: 14,
+      src: "img/icons8-xbox-x-48.png",
+      name: "Xbox",
+    },
+    {
+      id: 15,
+      src: "img/icons8-amazon-prime-video-48.png",
+      name: "Prime Video",
+    },
+    {
+      id: 16,
+      src: "img/icons8-tiktok-48.png",
+      name: "Tiktok",
+    },
+  ];
+
+  iconList.forEach((element) => {
+    console.log(element);
+    let windowsdiv = document.createElement("div");
+    let windowsImg = document.createElement("img");
+    windowsdiv.className="windows-div"
+    windowsImg.className="windows-icons"
+    windowsImg.src = element.src;
+    console.log(windowsImg.src);
+    windowsdiv.appendChild(windowsImg);
+    windowsdiv.setAttribute("id", `${element.id}`);
+    iconsDiv.append(windowsdiv);
+  });
 
         
 
