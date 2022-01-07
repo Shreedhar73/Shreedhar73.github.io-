@@ -244,6 +244,7 @@
 
       <div class="recyclebin dicon"></div>
       <div class="vscodeI dicon"></div>
+      <div class = "notes dicon"></div>
     </div>
     <div class="folder fsize">
       <div class="taskbar-mypc">
@@ -278,9 +279,39 @@
         </div>
       </div>
     </div>
+  <!-- notes app -->
+    <div class="notesdiv fsize">
+      <div class="taskbar-notes">
+        <div class="name">Notes</div>
+        <div class="right-icons">
+          <div class="minimize icon">
+            <img src="./img/minimize.png" alt="minimize" />
+          </div>
+          <div class="maximize icon">
+            <img src="./img/maximize.png" alt="close" />
+          </div>
+          <div class="close icon">
+            <img src="./img/close.png" alt="close" />
+          </div>
+
+          
+          
+        </div>
+      </div>
+
+      <div class="textField">
+        <textarea type="text" id="autocomplete" placeholder="Type a Word ......."></textarea>
+        <ul id="results"></ul>
+       </div>
+    </div>
+
+
   </body>
   <script src="./js/layout.js"></script>
   <script src="./js/datetime.js"></script>
   <script src="./js/brightness.js"></script>
   <script src="./js/camera.js"></script>
+  <script src="./js/notes.js"></script>
+  <script src="./js/autocomplete.js"></script>
+  
 </html>

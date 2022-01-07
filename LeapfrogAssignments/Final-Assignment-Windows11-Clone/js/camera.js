@@ -29,7 +29,7 @@ closecam.addEventListener("click",()=>{
    
 })
 
-maximize.addEventListener("click",()=>{
+maximizecam.addEventListener("click",()=>{
     if(cameradiv.style.width == "100%"){
     cameradiv.style.width = "50%";
     cameradiv.style.height = "60%";

@@ -250,10 +250,16 @@ svg{
 }
 
 .vscodeI{
-    position: relative;
+    /* position: relative; */
     background-image: url("../img/vscode.png");
     background-repeat: no-repeat;
     background-size: cover;
+}
+.notes{
+    background-image: url("../img/notes.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
 
 .startmenu{
@@ -393,7 +399,7 @@ svg{
   .cameradiv{
     position: absolute;
     top: 0px;
-    height: 95%;
+    height:88%;
     /* left: 15%; */
     
     background-color: rgb(8, 0, 0);
@@ -401,11 +407,57 @@ svg{
     
 }
 
+
 .cameradiv .taskbar-camera{
     width: 100%;
     height: 30px;
     background-color: #414358;
     top: 0px;
+}
+
+.notesdiv{
+    position: absolute;
+    top: 0px;
+    height: 80%;
+    /* width: 80%; */
+    background-color: #f0dfdf;
+    margin-left: 15%;
+    display: none;
+    
+}
+.notesdiv .taskbar-notes{
+    width: 100%;
+    height: 30px;
+    background-color: #414358;
+    top: 0px;
+}
+.notesdiv .textField{
+    position: absolute;
+    border: 2px solid red;
+    top: 10%;
+    left: 10%;
+    height: 80%;
+    width: 80%;
+    /* display: flex; */
+    float: left;
+}
+
+.textField textarea{
+    height: 100%;
+    width: 100%;
+    max-lines: 100;
+    overflow: hidden;
+    /* white-space: nowrap; */
+}
+
+ul li{
+    display:inline-block;
+    background-color:#eee;
+    list-style-type:none;
+    margin-right:-4px;
+    padding:10px;
+    border-right:1px solid white;
+    
 }
 
 
