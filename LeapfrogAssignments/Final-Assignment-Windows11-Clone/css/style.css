@@ -263,23 +263,25 @@ svg{
 }
 
 .startmenu{
+    border: 1px solid #464242;
     position: absolute;
-    /* top: 5%; */
-    left: 35%;
-    width: 35%;
+    display: grid;
+    
+    grid-auto-rows: auto auto auto;
+    
+    left: 30%;
+    width: 42.5%;
     height: 35rem;
     background-color: rgb(34, 34, 73);
     opacity: 0.91;
     
-    /* background-image: url("../img/startmenu.PNG");
-    background-repeat: no-repeat;
-    background-size: cover; */
+   
     border-radius: 15px;
     
     text-align: center;
     align-items: center;
     transition: top 1s ;
-    /* display: none; */
+   
 }
 
 .search-div{
@@ -304,20 +306,22 @@ svg{
   }
 
 
-  .icons-div{
-    position: relative;
+  .icons-div {
+    
     margin: 0 8px;
+    position: absolute;
     top: 15%;
-    /* left: 0; */
+    left: 9%;
+    
     display: grid;
-    grid-template-columns: repeat(6, auto) ;
-    grid-gap: 1em;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 1.5em;
   }
 
   .windows-div{
-    /* border: 2px solid yellow; */
+    
     position: relative;
-    height: 115%;
+    height: 120%;
     width: 120%;
   }
   .windows-div:hover{
@@ -328,8 +332,8 @@ svg{
   .windows-icons{
     position: relative;
     top: 16%;
-    max-width: 75%;
-    max-height: 75%;
+    max-width: 70%;
+    max-height: 70%;
  
  }
 
@@ -337,7 +341,7 @@ svg{
      position: relative;
      top: 10%;
      color: #f7e9e9;
-     font-size: 0.9em;
+     font-size: 0.8em;
  }
 
  .power-div{
@@ -519,7 +523,9 @@ svg{
     /* white-space: nowrap; */
 }
 
+
 ul li{
+    
     display:inline-block;
     background-color:#eee;
     list-style-type:none;
