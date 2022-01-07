@@ -163,7 +163,7 @@ const iconList = [
     {
       id: 6,
       src: "img/icons8-microsoft-store-50.png",
-      name: "Miscrosoft Store",
+      name: "Store",
     },
     {
       id: 7,
@@ -193,7 +193,7 @@ const iconList = [
     {
       id: 12,
       src: "img/icons8-whatsapp-48.png",
-      name: "WhatsAPp",
+      name: "WhatsApp",
     },
     {
       id: 13,
@@ -221,12 +221,16 @@ const iconList = [
     console.log(element);
     let windowsdiv = document.createElement("div");
     let windowsImg = document.createElement("img");
-    windowsdiv.className="windows-div"
-    windowsImg.className="windows-icons"
+    let iconsName = document.createElement("p");
+    windowsdiv.className="windows-div";
+    windowsImg.className="windows-icons";
+    iconsName.className = "icons-name";
     windowsImg.src = element.src;
+    iconsName.innerHTML=element.name;
     console.log(windowsImg.src);
-    windowsdiv.appendChild(windowsImg);
+    
     windowsdiv.setAttribute("id", `${element.id}`);
+    windowsdiv.append(windowsImg,iconsName);
     iconsDiv.append(windowsdiv);
   });
 
