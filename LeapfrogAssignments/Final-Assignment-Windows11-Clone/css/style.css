@@ -328,7 +328,7 @@ svg{
 .utilsDiv{
     position: relative;
     margin-left: auto;
-    bottom:  15vh;
+    /* bottom:  15vh; */
 
     
     width: 22%;

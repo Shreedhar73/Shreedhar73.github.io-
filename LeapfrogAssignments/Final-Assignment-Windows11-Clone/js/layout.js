@@ -36,6 +36,7 @@ shutdown = function(){
 }
 
 powerOff.addEventListener("click",shutdown);
+// let height = 768;
 
 
 
@@ -43,6 +44,14 @@ let utilsbtn = document.getElementsByClassName("utils")[0];
 let utilsdiv = document.createElement("div");
 utilsdiv.className = "utilsDiv";
 utilsdiv.style.left = "25%";
+console.log(window.innerHeight);
+if(window.innerHeight >= 655){
+    utilsdiv.style.bottom = "16vh";
+}else{
+    utilsdiv.style.bottom = "23vh";
+}
+
+
 
 let bSlider = document.createElement("div");
 bSlider.className = "bSlider";
