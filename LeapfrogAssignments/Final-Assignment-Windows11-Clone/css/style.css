@@ -311,7 +311,7 @@ svg{
     margin: 0 8px;
     position: absolute;
     top: 15%;
-    left: 9%;
+    /* left: 9%; */
     
     display: grid;
     grid-template-columns: repeat(6, 1fr);

@@ -9,7 +9,12 @@ let searchField = document.createElement("input")
 startmenu.className = "startmenu";
 startmenu.style.top = "125%";
 
-iconsDiv.className = "icons-div"
+iconsDiv.className = "icons-div";
+if(window.innerHeight >= 655){
+  iconsDiv.style.left = "9%";
+}else{
+  iconsDiv.style.left = "4%";
+}
 searchDiv.className="search-div"
 searchField.className= "search-field"
 let powerDiv = document.createElement("div");
