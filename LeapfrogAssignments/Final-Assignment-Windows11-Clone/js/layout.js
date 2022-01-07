@@ -49,7 +49,7 @@ bSlider.className = "bSlider";
 
 
 let brightnessIcon = document.createElement("img");
-brightnessIcon.src = "../img/brightness.png";
+brightnessIcon.src = "./img/brightness.png";
 let brange = document.createElement("input");
 brange.type = "range";
 brange.id = "brightness-range";
