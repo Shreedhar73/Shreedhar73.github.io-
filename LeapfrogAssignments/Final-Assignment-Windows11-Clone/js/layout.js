@@ -17,7 +17,11 @@ startmenu.appendChild(powerOff);
 
 startbtn.addEventListener("click", () =>{
     if(startmenu.style.top == '125%'){
-        startmenu.style.top = '5%';
+        if(window.innerHeight >= 655){
+        startmenu.style.top = '15%';
+        }else{
+            startmenu.style.top = '-4%';
+        }
         startbtn.style.color = "rgb(14,13,13)";
         startbtn.style.boxShadow = "0 5px 15px rgba(15,125,228,0.5)";
     //     color: rgb(14, 13, 13);
@@ -48,7 +52,7 @@ console.log(window.innerHeight);
 if(window.innerHeight >= 655){
     utilsdiv.style.bottom = "16vh";
 }else{
-    utilsdiv.style.bottom = "23vh";
+    utilsdiv.style.bottom = "32vh";
 }
 
 
