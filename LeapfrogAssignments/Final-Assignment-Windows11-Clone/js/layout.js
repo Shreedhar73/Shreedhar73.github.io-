@@ -68,9 +68,9 @@ utilsdiv.className = "utilsDiv";
 utilsdiv.style.left = "25%";
 console.log(window.innerHeight);
 if(window.innerHeight >= 655){
-    utilsdiv.style.bottom = "16vh";
+    utilsdiv.style.bottom = "25vh";
 }else{
-    utilsdiv.style.bottom = "32vh";
+    utilsdiv.style.bottom = "41vh";
 }
 
 
