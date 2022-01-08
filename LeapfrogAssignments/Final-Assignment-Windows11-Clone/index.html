@@ -245,6 +245,7 @@
       <div class="recyclebin dicon"></div>
       <div class="vscodeI dicon"></div>
       <div class = "notes dicon"></div>
+      <div class = "pwdGen dicon"></div>
     </div>
     <div class="folder fsize">
       <div class="taskbar-mypc">
@@ -262,7 +263,7 @@
         </div>
       </div>
     </div>
-
+    <!-- camera app -->
     <div class="cameradiv fsize">
       <div class="taskbar-camera">
         <div class="name">Camera</div>
@@ -293,9 +294,6 @@
           <div class="close icon">
             <img src="./img/close.png" alt="close" />
           </div>
-
-          
-          
         </div>
       </div>
 
@@ -303,6 +301,64 @@
         <textarea type="text" id="autocomplete" placeholder="Type a Word ......."></textarea>
         <ul id="results"></ul>
        </div>
+    </div>
+
+    <!-- Password generator app -->
+    <div class="pwdGen-div fsize">
+      <div class="taskbar-pwdGen">
+        <div class="name">Random Password Generator</div>
+        <div class="right-icons">
+          <div class="minimize icon">
+            <img src="./img/minimize.png" alt="minimize" />
+          </div>
+          <div class="maximize icon">
+            <img src="./img/maximize.png" alt="close" />
+          </div>
+          <div class="close icon">
+            <img src="./img/close.png" alt="close" />
+          </div>
+        </div>
+      </div>
+
+      <div class="main-container">
+      <div class="container">
+        <h2>Password Generator</h2>
+        <div class="sub-container">
+            <span class="result"></span>
+            <button class="btn" id="clipboard">
+              <img src="./img/clipboard.png" alt="clipboard">
+               
+            </button>
+        </div>
+        <div class="set-container">
+            <div class="setup">
+                <label>Password length</label>
+                <input type="number" class="length" min="2" max="15" value="15" />
+            </div>
+            <div class="setup">
+                <label>Include uppercase letters</label>
+                <input type="checkbox" class="uppercase" checked />
+            </div>
+            <div class="setup">
+                <label>Include lowercase letters</label>
+                <input type="checkbox" class="lowercase" checked />
+            </div>
+            <div class="setup">
+                <label>Include Numbers</label>
+                <input type="checkbox" class="numbers" checked />
+            </div>
+            <div class="setup">
+                <label>Include symbols</label>
+                <input type="checkbox" class="symbols" checked />
+            </div>
+        </div>
+        <button class="btn" id="generate">
+            Generate Password
+        </button>
+    </div>
+  </div>
+
+
     </div>
 
 
@@ -313,5 +369,6 @@
   <script src="./js/camera.js"></script>
   <script src="./js/notes.js"></script>
   <script src="./js/autocomplete.js"></script>
+  <script src="./js/rndPassword.js"></script>
   
 </html>

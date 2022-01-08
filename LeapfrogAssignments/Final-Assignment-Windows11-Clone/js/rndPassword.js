@@ -1,3 +1,33 @@
+//app layout 
+let randonpwdDiv = document.getElementsByClassName("pwdGen-div")[0];
+randonpwdDiv.style.width = "84%";
+
+
+let pwdbtn = document.getElementsByClassName("pwdGen")[0];
+let closepwd = document.getElementsByClassName("close")[3];
+let maximizepwd = document.getElementsByClassName("maximize")[3];
+
+
+
+
+
+
+
+
+pwdbtn.addEventListener("dblclick",()=>{
+    randonpwdDiv.style.display = "block";
+})
+
+closepwd.addEventListener("click", ()=>{
+    randonpwdDiv.style.display = "none";
+})
+
+
+
+
+
+
+
 const resultEl = document.querySelector(".result");
 const lengthEl = document.querySelector(".length");
 const uppercaseEl = document.querySelector(".uppercase");

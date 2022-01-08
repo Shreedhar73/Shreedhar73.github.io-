@@ -35,7 +35,7 @@ maximizecam.addEventListener("click",()=>{
     cameradiv.style.height = "60%";
 }else{
     cameradiv.style.width = "100%";
-    cameradiv.style.height = "105.4%";
+    cameradiv.style.height = "44rem";
 }
 
 })

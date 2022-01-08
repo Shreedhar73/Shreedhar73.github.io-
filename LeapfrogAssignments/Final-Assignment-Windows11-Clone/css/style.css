@@ -261,6 +261,12 @@ svg{
     background-size: cover;
     
 }
+.pwdGen{
+    background-image: url("../img/password.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
 
 .startmenu{
     border: 1px solid #464242;
@@ -445,12 +451,16 @@ svg{
     outline: none;
     cursor: pointer;    
   }
+
+  .fsize{
+      height: 44rem;
+  }
   
 
   .folder{
       position: absolute;
       top: 0px;
-      height: 95.5%;
+      /* height: 95.5%; */
       
       background-color: rgb(122, 113, 113);
       display: none;
@@ -472,7 +482,7 @@ svg{
   .cameradiv{
     position: absolute;
     top: 0px;
-    height:88%;
+    /* height:88%; */
     /* left: 15%; */
     
     background-color: rgb(8, 0, 0);
@@ -566,6 +576,128 @@ ul li{
       width: 100%;
       height: 90%;
   }
+
+
+  /* password gen */
+
+  .pwdGen-div{
+    position: absolute;
+    top: 0px;
+    /* height: 80%; */
+    left: 5%;
+    /* width: 94%; */
+    
+    background-color: rgb(8, 0, 0);
+    display: none;
+    
+}
+#clipboard img{
+    position: relative;
+    left: -0.6rem;
+    top: -0.3rem;
+    height: 35px;
+    width: 35px;
+}
+
+
+.pwdGen-div .taskbar-pwdGen{
+    width: 100%;
+    height: 30px;
+    background-color: #5a5d77;
+    top: 0px;
+}
+
+
+
+
+
+input[type="checkbox"] {
+  margin-right: 0;
+}
+
+.main-container {
+  background-color: #251c31;
+  color: #fff;
+  display: flex;
+  font-family: "Mulish", sans-serif;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+ 
+  min-height: 95.5%;
+}
+
+.container {
+  background: #3fa7a7;
+  padding: 20px;
+  width: 350px;
+  max-width: 100%;
+  box-shadow: 2px 4px 20px 6px rgb(0 0 0 /40%);
+}
+
+.container h2 {
+  margin: 10px 0 20px;
+  text-align: center;
+}
+
+.sub-container {
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  font-size: 18px;
+  letter-spacing: 1px;
+  padding: 12px 10px;
+  height: 50px;
+  width: 100%;
+}
+
+.sub-container .result {
+  word-wrap: break-word;
+  max-width: calc(100% - 40px);
+}
+
+.container .sub-container .btn {
+  background-color: gray;
+  font-size: 20px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  height: 40px;
+  width: 40px;
+}
+
+.container .btn {
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 8px 12px;
+  background: #111;
+  display: block;
+  width: 100%;
+  outline: none;
+}
+
+.setup {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.setup input#length {
+  outline: none;
+}
+
+@media (max-width: 400px) {
+  .sub-container {
+    font-size: 14px;
+  }
+}
+
 
 
 

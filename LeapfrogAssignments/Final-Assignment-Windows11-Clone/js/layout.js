@@ -11,6 +11,7 @@ startmenu.style.top = "125%";
 
 iconsDiv.className = "icons-div";
 if(window.innerHeight >= 655){
+  
   iconsDiv.style.left = "9%";
 }else{
   iconsDiv.style.left = "4%";
@@ -137,7 +138,7 @@ maximize.addEventListener("click",()=>{
     folder.style.height = "60%";
 }else{
     folder.style.width = "100%";
-    folder.style.height = "95.5%";
+    folder.style.height = "44rem";
 }
 
 })
