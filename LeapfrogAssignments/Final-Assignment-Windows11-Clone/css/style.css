@@ -115,7 +115,14 @@ svg{
 
 .btnhover:hover{
     border-radius: 4px;
-    background-color: rgb(224, 217, 217);
+    background-color: rgb(230, 216, 216);
+    /* box-shadow: rgb(156, 154, 154); */
+}
+
+.third-section .btnhover:hover{
+   background-color: whitesmoke;
+    transform: scale(1.1);
+    color: wheat;
 }
 
 .taskbarright {
@@ -130,9 +137,11 @@ svg{
 
 .more{
     position: absolute;
-    border: 2px solid red;
+    
   
-    background: gray;
+    /* background-image: url("../img/more.png"); */
+    background-size: cover;
+    background-position: center;
     bottom: 2%;
     width: 2%;
     height: 99%;
@@ -142,9 +151,12 @@ svg{
 }
 
 .utils{
-    border: 2px solid red;
+    
     position: absolute;
-    background: transparent;
+    background-image: url("../img/utils.png");
+    background-size: cover;
+    background-position: center;
+    /* background: transparent; */
     bottom: 2%;
     width: 5.5%;
     height: 99%;
@@ -185,7 +197,7 @@ svg{
 
 } */
 .datetime{
-    border: 2px solid red;
+    
     position: absolute;
     
     
@@ -199,10 +211,12 @@ svg{
 
 }
 .notifications{
-    border: 2px solid red;
+    
     position: absolute;
    
-    background: transparent;
+    background-image: url("../img/utils.png");
+    background-size: cover;
+    background-position: center;
     bottom: 2%;
     width: 2%;
     height: 99%;
