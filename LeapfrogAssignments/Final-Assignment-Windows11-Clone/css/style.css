@@ -1,625 +1,498 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    
-    position: relative;
-    background-image: url('../img/bg.jpeg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow: hidden;
-    height: 100%;
-    /* filter: brightness(0%); */
-    
-    
-   
+body {
+  position: relative;
+  background-image: url("../img/bg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  height: 100%;
 }
 
-.taskbar{
-    /* border: 1px solid white; */
-    border-top: 1px solid rgb(58, 58, 58);
-    background: #f3f3f3;
-    height: 2.5em;
-    position: absolute;
-    width: 100%;
-    top: 94.6vh;
-    display: flex;
-    /* grid-template-columns: auto auto auto; */
-    justify-content: space-between;
-    align-items: center;
-}
-.second-section{
-    /* border: 1px solid white; */
-    width: 28%;
-    /* border: 1px solid white; */
-
-    height: 65%;
-    bottom: 25%;
-    position: absolute;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    left: 36%;
-    justify-content: space-around;
-    align-items: center;
-}
-svg{
-    
-    position: absolute;
-    box-shadow: rgb(156, 154, 154);
-    top: 15%;
-    left: 20%;
-    
-    max-width: 100%;
-    max-height: 80%;
-}
-.windowbtn{
-    /* border: 1px solid white; */
-
-    position: absolute;
-    height: 110%;
-    width: 10%;
-    left:20%;
+.taskbar {
+  border-top: 1px solid rgb(58, 58, 58);
+  background: #f3f3f3;
+  height: 2.5em;
+  position: absolute;
+  width: 100%;
+  top: 94.6vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.searchbtn{
-    /* border: 1px solid white; */
-
-    position: absolute;
-    left:32%;
-    height: 110%;
-    width: 10%;
-}
-.search{
-    /* border: 2px solid white; */
-   transform: rotate(70deg);
-}
-.switchbtn{
-    /* border: 1px solid white; */
-
-    position: absolute;
-    left:44%;
-    height: 110%;
-    width: 10%;
-
-}
-.microsoftbtn{
-    /* border: 1px solid white; */
-
-    position: absolute;
-    left:56%;
-    height: 110%;
-    width: 10%;
-
+.second-section {
+  width: 28%;
+  height: 65%;
+  bottom: 25%;
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  left: 36%;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.edgebtn{
-    /* border: 1px solid white; */
-
-    position: absolute;
-    left:68%;
-    height: 110%;
-    width: 10%;
-
+svg {
+  position: absolute;
+  box-shadow: rgb(156, 154, 154);
+  top: 15%;
+  left: 20%;
+  max-width: 100%;
+  max-height: 80%;
 }
-.vscode{
-
-    position: absolute;
-    left:80%;
-    height: 110%;
-    width: 10%;
+.windowbtn {
+  position: absolute;
+  height: 110%;
+  width: 10%;
+  left: 20%;
 }
 
-.btnhover:hover{
-    border-radius: 4px;
-    background-color: rgb(230, 216, 216);
-    /* box-shadow: rgb(156, 154, 154); */
+.searchbtn {
+  position: absolute;
+  left: 32%;
+  height: 110%;
+  width: 10%;
 }
 
-.third-section .btnhover:hover{
-   background-color: whitesmoke;
-    transform: scale(1.1);
-    color: wheat;
+.search {
+  transform: rotate(70deg);
+}
+.switchbtn {
+  position: absolute;
+  left: 44%;
+  height: 110%;
+  width: 10%;
+}
+.microsoftbtn {
+  position: absolute;
+  left: 56%;
+  height: 110%;
+  width: 10%;
+}
+
+.edgebtn {
+  position: absolute;
+  left: 68%;
+  height: 110%;
+  width: 10%;
+}
+
+.vscode {
+  position: absolute;
+  left: 80%;
+  height: 110%;
+  width: 10%;
+}
+
+.btnhover:hover {
+  border-radius: 4px;
+  background-color: rgb(230, 216, 216);
+}
+
+.third-section .btnhover:hover {
+  background-color: whitesmoke;
+  transform: scale(1.1);
+  color: wheat;
 }
 
 .taskbarright {
-   
-    position: absolute;
-    justify-self: flex-end;
-    right: 0;
-    margin: 0;
-    height: 75%;
-    width: 15%;    
+  position: absolute;
+  justify-self: flex-end;
+  right: 0;
+  margin: 0;
+  height: 75%;
+  width: 15%;
 }
 
-.more{
-    position: absolute;
-    
-  
-    /* background-image: url("../img/more.png"); */
-    background-size: cover;
-    background-position: center;
-    bottom: 2%;
-    width: 2%;
-    height: 99%;
-    left:85% ;
-    color: #000;
-
+.more {
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  bottom: 2%;
+  width: 2%;
+  height: 99%;
+  left: 85%;
+  color: #000;
 }
 
-.utils{
-    
-    position: absolute;
-    background-image: url("../img/utils.png");
-    background-size: cover;
-    background-position: center;
-    /* background: transparent; */
-    bottom: 2%;
-    width: 5.5%;
-    height: 99%;
-    left: 87%;
-
-}
-/* .wifi{
-    position: absolute;
-    
-    background: transparent;
-    bottom: 13px;
-    width: 30px;
-    height: 72%;
-    left:87% ;
-    color: #000;
-
-}
-.sound{
-    position: absolute;
-    
-    background: transparent;
-    bottom: 13px;
-    width: 30px;
-    height: 72%;
-    left:88.8% ;
-    color: #000;
-
-}
-.language{
-    position: absolute;
-   
-    background: transparent;
-    bottom: 13px;
-    width: 30px;
-    height: 72%;
-    left:90.6% ;
-    color: #000;
-
-} */
-.datetime{
-    
-    position: absolute;
-    
-    
-    
-    background: transparent;
-    bottom: 2%;
-    width: 5%;
-    height: 99%;
-    left:92.6% ;
-    color: #000;
-
-}
-.notifications{
-    
-    position: absolute;
-   
-    background-image: url("../img/utils.png");
-    background-size: cover;
-    background-position: center;
-    bottom: 2%;
-    width: 2%;
-    height: 99%;
-    left:98% ;
-    color: #000;
-
+.utils {
+  position: absolute;
+  background-image: url("../img/utils.png");
+  background-size: cover;
+  background-position: center;
+  /* background: transparent; */
+  bottom: 2%;
+  width: 5.5%;
+  height: 99%;
+  left: 87%;
 }
 
-.dicon{
-    height: 50px;
-    width: 50px;
-   
-    
-    margin-bottom: 15px;
-    
+.datetime {
+  position: absolute;
+
+  background: transparent;
+  bottom: 2%;
+  width: 5%;
+  height: 99%;
+  left: 92.6%;
+  color: #000;
 }
-.dicon:hover{
-    background-color: rgb(71, 65, 65);
-    opacity: 0.8;
-    display: block;
-    
+.notifications {
+  position: absolute;
 
-
-}
-
-.recyclebin{
-    position: relative;
-    background-image: url("../img/recyclebinicon.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.mypc{
-    position: relative;
-    background-image: url("../img/thispc.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url("../img/utils.png");
+  background-size: cover;
+  background-position: center;
+  bottom: 2%;
+  width: 2%;
+  height: 99%;
+  left: 98%;
+  color: #000;
 }
 
-.camera{
-    position: relative;
-    background-image: url("../img/camera.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+.dicon {
+  height: 50px;
+  width: 50px;
+
+  margin-bottom: 15px;
+}
+.dicon:hover {
+  background-color: rgb(71, 65, 65);
+  opacity: 0.8;
+  display: block;
 }
 
-.vscodeI{
-    /* position: relative; */
-    background-image: url("../img/vscode.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.notes{
-    background-image: url("../img/notes.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-}
-.pwdGen{
-    background-image: url("../img/password.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    
+.recyclebin {
+  position: relative;
+  background-image: url("../img/recyclebinicon.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.startmenu{
-    border: 1px solid #464242;
-    position: absolute;
-    display: grid;
-    
-    grid-auto-rows: auto auto auto;
-    
-    left: 30%;
-    width: 42.5%;
-    height: 35rem;
-    background-color: rgb(34, 34, 73);
-    opacity: 0.91;
-    
-   
-    border-radius: 15px;
-    
-    text-align: center;
-    align-items: center;
-    transition: top 1s ;
-   
+.mypc {
+  position: relative;
+  background-image: url("../img/thispc.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.search-div{
-    position: absolute;
-    width: 100%;
-    padding: 20px;
-    top: 0%;
-  }
+.camera {
+  position: relative;
+  background-image: url("../img/camera.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
-  .search-field{
-    position: relative;
-    width: 100%;
-    height: 30px;
-    border-radius: 6px;
-    background: black;
-    opacity: 0.6;
-    color: white;
-    border-bottom: 2px solid #ffffff;
-  }
-  .search-field::placeholder{
-    color: white;
-  }
+.vscodeI {
+  /* position: relative; */
+  background-image: url("../img/vscode.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.notes {
+  background-image: url("../img/notes.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.pwdGen {
+  background-image: url("../img/password.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
+.startmenu {
+  border: 1px solid #464242;
+  position: absolute;
+  display: grid;
 
-  .icons-div {
-    
-    margin: 0 8px;
-    position: absolute;
-    top: 15%;
-    /* left: 9%; */
-    
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-gap: 1.5em;
-  }
+  grid-auto-rows: auto auto auto;
 
-  .windows-div{
-    
-    position: relative;
-    height: 120%;
-    width: 120%;
-  }
-  .windows-div:hover{
-    background-color: #737375;
-    opacity: 0.7;
-    border-radius: 6px;
-  }
-  .windows-icons{
-    position: relative;
-    top: 16%;
-    max-width: 70%;
-    max-height: 70%;
- 
- }
+  left: 30%;
+  width: 42.5%;
+  height: 35rem;
+  background-color: rgb(34, 34, 73);
+  opacity: 0.91;
 
- .icons-name{
-     position: relative;
-     top: 10%;
-     color: #f7e9e9;
-     font-size: 0.8em;
- }
+  border-radius: 15px;
 
- .power-div{
-    border-top: 1px solid #464242;
-   position: absolute;
-   height: 10%;
-   width: 100%;
-   bottom: 0;
-   border-bottom-left-radius: 15px;
-   border-bottom-right-radius: 15px;
-  }
+  text-align: center;
+  align-items: center;
+  transition: top 1s;
+}
 
+.search-div {
+  position: absolute;
+  width: 100%;
+  padding: 20px;
+  top: 0%;
+}
 
+.search-field {
+  position: relative;
+  width: 100%;
+  height: 30px;
+  border-radius: 6px;
+  background: black;
+  opacity: 0.6;
+  color: white;
+  border-bottom: 2px solid #ffffff;
+}
+.search-field::placeholder {
+  color: white;
+}
+
+.icons-div {
+  margin: 0 8px;
+  position: absolute;
+  top: 15%;
+  /* left: 9%; */
+
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 1.5em;
+}
+
+.windows-div {
+  position: relative;
+  height: 120%;
+  width: 120%;
+}
+.windows-div:hover {
+  background-color: #737375;
+  opacity: 0.7;
+  border-radius: 6px;
+}
+.windows-icons {
+  position: relative;
+  top: 16%;
+  max-width: 70%;
+  max-height: 70%;
+}
+
+.icons-name {
+  position: relative;
+  top: 10%;
+  color: #f7e9e9;
+  font-size: 0.8em;
+}
+
+.power-div {
+  border-top: 1px solid #464242;
+  position: absolute;
+  height: 10%;
+  width: 100%;
+  bottom: 0;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
 
 .powerOff {
-    position: relative;
-    top: 20%;
-    left: 85%;
-    background-image: url('../img/shutdown.png');
+  position: relative;
+  top: 20%;
+  left: 85%;
+  background-image: url("../img/shutdown.png");
 
-    background-color: rgb(202, 191, 191);
-    background-size: cover;
-    border-radius: 5px;
-    padding: 15px;
-    
-    
+  background-color: rgb(202, 191, 191);
+  background-size: cover;
+  border-radius: 5px;
+  padding: 15px;
 }
 
+#time {
+  position: absolute;
+  background-color: #f3f3f3;
+  top: 5%;
+  width: 4%;
+  height: 45%;
+  left: 93.5%;
+  font-size: 12px;
 
-#time{
-    position: absolute;
-    background-color: #f3f3f3;
-    top: 5%;
-    width: 4%;
-    height: 45%;
-    left: 93.5%;
-    font-size: 12px;
-    
-   z-index: 1001;
-    
+  z-index: 1001;
 }
 
-#date{
-    position: absolute;
-    background-color: #f3f3f3;
-    top: 50%;
-    width: 4%;
-    height: 45%;
-    left: 93.5%;
-    font-size: 12px;
-    
-   /* z-index: 1001; */
-    
+#date {
+  position: absolute;
+  background-color: #f3f3f3;
+  top: 50%;
+  width: 4%;
+  height: 45%;
+  left: 93.5%;
+  font-size: 12px;
 }
 
-
-.utilsDiv{
-    position: relative;
-    margin-left: auto;
-    /* bottom:  15vh; */
-
-    
-    width: 22%;
-    height: 30rem;
-    background-color: rgb(34, 34, 73);
-    opacity: 0.91;
-    transition: left 1s;
-    /* background-image: url("../img/startmenu.PNG");
-    background-repeat: no-repeat;
-    background-size: cover; */
-    border-radius: 15px;
-    
-    text-align: center;
-    align-items: center;  
-   
+.utilsDiv {
+  position: relative;
+  margin-left: auto;
+  width: 22%;
+  height: 30rem;
+  background-color: rgb(34, 34, 73);
+  opacity: 0.91;
+  transition: left 1s;
+  border-radius: 15px;
+  text-align: center;
+  align-items: center;
 }
 
 .bSlider {
-    position: relative;
-    top: 90%;
-    margin: auto;
-    width: 70%;
-    background: #f3f3f3;
-    border-radius: 10px;
-    left: 25px;
-    padding: 5px;
-    height: 30px;
-  }
-
-  .bSlider img{
-      position: relative;
-      float: left;
-      left: -40px;
-      bottom: 20px;
-  }
-  #brightness-range {
-    width: 100%;
-   
-    background: #131212;
-    height: 5px;
-    outline: none;
-    cursor: pointer;    
-  }
-
-  .fsize{
-      height: 44rem;
-  }
-  
-
-  .folder{
-      position: absolute;
-      top: 0px;
-      /* height: 95.5%; */
-      
-      background-color: rgb(122, 113, 113);
-      display: none;
-      
-  }
-
-  .folder .taskbar-mypc{
-      width: 100%;
-      height: 30px;
-      background-color: #414358;
-      top: 0px;
-  }
-  .close :hover{
-      background-color: red;
-  }
-
-
-  
-  .cameradiv{
-    position: absolute;
-    top: 0px;
-    /* height:88%; */
-    /* left: 15%; */
-    
-    background-color: rgb(8, 0, 0);
-    display: none;
-    
+  position: relative;
+  top: 90%;
+  margin: auto;
+  width: 70%;
+  background: #f3f3f3;
+  border-radius: 10px;
+  left: 25px;
+  padding: 5px;
+  height: 30px;
 }
 
-
-.cameradiv .taskbar-camera{
-    width: 100%;
-    height: 30px;
-    background-color: #414358;
-    top: 0px;
+.bSlider img {
+  position: relative;
+  float: left;
+  left: -40px;
+  bottom: 20px;
+}
+#brightness-range {
+  width: 100%;
+  background: #131212;
+  height: 5px;
+  outline: none;
+  cursor: pointer;
 }
 
-.notesdiv{
-    position: absolute;
-    top: 0px;
-    height: 44rem;
-    /* width: 80%; */
-    background-color: #f0dfdf;
-    /* margin-left: 15%; */
-    display: none;
-    
-}
-.notesdiv .taskbar-notes{
-    width: 100%;
-    height: 30px;
-    background-color: #414358;
-    top: 0px;
-}
-.notesdiv .textField{
-    position: absolute;
-    border: 2px solid red;
-    top: 10%;
-    left: 10%;
-    height: 80%;
-    width: 80%;
-    /* display: flex; */
-    float: left;
+.fsize {
+  height: 44rem;
 }
 
-.textField textarea{
-    height: 100%;
-    width: 100%;
-    max-lines: 100;
-    overflow: hidden;
-    /* white-space: nowrap; */
+.folder {
+  position: absolute;
+  top: 0px;
+  background-color: rgb(122, 113, 113);
+  display: none;
 }
 
-
-ul li{
-    
-    display:inline-block;
-    background-color:#eee;
-    list-style-type:none;
-    margin-right:-4px;
-    padding:10px;
-    border-right:1px solid white;
-    
+.folder .taskbar-mypc {
+  width: 100%;
+  height: 30px;
+  background-color: #414358;
+  top: 0px;
+}
+.close :hover {
+  background-color: red;
 }
 
-
-  .name{
-      float: left;
-      padding: 5px;
-  }
-  .right-icons{
-      display: flex;
-      float: right;
-      
-  }
-  .right-icons .icon{
-      height: 35px;
-      width: 35px;
-      padding: 3px;
-  }
-
-  .right-icons .icon:hover{
-      
-      /* background-color: rgb(121, 118, 118); */
-      box-shadow: 0 5px 15px rgba(188, 134, 241, 0.918);
-  }
-
-
-  #cam{
-      
-      position: absolute;
-      
-      top: 10%;
-      width: 100%;
-      height: 90%;
-  }
-
-
-  /* password gen */
-
-  .pwdGen-div{
-    top: 0;
-    position: absolute;
-    background-color: rgb(8, 0, 0);
-    display: none;
-    
-}
-#clipboard img{
-    position: relative;
-    left: -0.6rem;
-    top: -0.3rem;
-    height: 35px;
-    width: 35px;
+.cameradiv {
+  position: absolute;
+  top: 0px;
+  background-color: rgb(8, 0, 0);
+  display: none;
 }
 
-
-.pwdGen-div .taskbar-pwdGen{
-    width: 100%;
-    height: 30px;
-    background-color: #5a5d77;
-    top: 0px;
+.cameradiv .taskbar-camera {
+  width: 100%;
+  height: 30px;
+  background-color: #414358;
+  top: 0px;
 }
 
+.notesdiv {
+  position: absolute;
+  top: 0px;
+  height: 44rem;
+  background-color: #f7f1f1;
+  display: none;
+}
 
+.notesdiv .taskbar-notes {
+  width: 100%;
+  height: 30px;
+  background-color: #414358;
+  top: 0px;
+}
 
+.notesdiv .textField {
+  position: absolute;
+  top: 5%;
+  left: 2.5%;
+  height: 80%;
+  width: 95%;
 
+  float: left;
+}
+
+.textField textarea {
+  height: 100%;
+  width: 100%;
+  max-lines: 100;
+  overflow: hidden;
+}
+
+ul li {
+  display: inline-block;
+  background-color: #eee;
+  list-style-type: none;
+  margin-right: -4px;
+  padding: 10px;
+  border-right: 1px solid white;
+}
+
+.name {
+  float: left;
+  padding: 5px;
+}
+.right-icons {
+  display: flex;
+  float: right;
+}
+.right-icons .icon {
+  height: 100%;
+  width: 35px;
+}
+
+.icon img {
+  margin-top: 5px;
+  height: 15px;
+  width: 15px;
+}
+
+.icon img:hover {
+  transform: scale(1.5);
+}
+
+#cam {
+  position: absolute;
+
+  top: 10%;
+  width: 100%;
+  height: 90%;
+}
+
+/* password gen */
+
+.pwdGen-div {
+  top: 0;
+  position: absolute;
+  background-color: rgb(8, 0, 0);
+  display: none;
+}
+#clipboard img {
+  position: relative;
+  left: -0.6rem;
+  top: -0.3rem;
+  height: 35px;
+  width: 35px;
+}
+
+.pwdGen-div .taskbar-pwdGen {
+  width: 100%;
+  height: 30px;
+  background-color: #5a5d77;
+  top: 0px;
+}
 
 input[type="checkbox"] {
   margin-right: 0;
@@ -634,7 +507,7 @@ input[type="checkbox"] {
   align-items: center;
   justify-content: center;
   width: 100%;
- 
+
   min-height: 95.5%;
 }
 
@@ -707,9 +580,3 @@ input[type="checkbox"] {
     font-size: 14px;
   }
 }
-
-
-
-
-
-

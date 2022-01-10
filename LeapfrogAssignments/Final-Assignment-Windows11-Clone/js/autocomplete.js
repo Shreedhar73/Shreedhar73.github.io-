@@ -1,24 +1,39 @@
-
-const data = ["red", "blue", "green", "yellow", "purple", "orange", "black", "white", "brown", "apple", "ball","cat","oil","elephant","airplane","linkedin","ios","android",];
-
+//List of Words that will get recommended, you can add as needed
+const data = [
+ 
+  "apple",
+  "ball",
+  "cat",
+  "oil",
+  "elephant",
+  "airplane",
+  "linkedin",
+  "ios",
+  "android",
+  "peter",
+  "shreedhar",
+  "Leapfrog"
+];
 
 const autocomplete = document.getElementById("autocomplete");
 const resultsHTML = document.getElementById("results");
 
+
+//slices the user input and stores  first character of inputted word and pass that character to recommender function
 autocomplete.oninput = function () {
   let results = [];
   let userInput = this.value;
   resultsHTML.innerHTML = "";
-  var linebreak = '\n';
+  var linebreak = "\n";
   if (userInput.length > 0) {
-    
     if (userInput.includes(" ")) {
       userInput = userInput.split(" ").pop();
       userInput = userInput == "" ? "#" : userInput;
-    }if (userInput.includes(linebreak)) {
-        userInput = userInput.split(linebreak).pop();
-        userInput = userInput == "" ? "#" : userInput;
-      }
+    }
+    if (userInput.includes(linebreak)) {
+      userInput = userInput.split(linebreak).pop();
+      userInput = userInput == "" ? "#" : userInput;
+    }
     results = getResults(userInput);
     resultsHTML.style.display = "block";
     for (i = 0; i < results.length; i++) {
@@ -27,16 +42,20 @@ autocomplete.oninput = function () {
   }
 };
 
+
+//function that checks input character with first character of defined Data and provides results
 function getResults(input) {
-  const results = [];
+  const recommednedData = [];
   for (i = 0; i < data.length; i++) {
-    if (input === data[i].slice(0, input.length)) {
-      results.push(data[i]);
+    if (input.toUpperCase() === data[i].slice(0, input.length).toUpperCase()) {
+      recommednedData.push(data[i]);
     }
   }
-  return results;
+  return recommednedData;
 }
 
+
+//function that will write the recommended words onto main text area if clicked over it
 resultsHTML.onclick = function (event) {
   debugger;
   let userInput = autocomplete.value;

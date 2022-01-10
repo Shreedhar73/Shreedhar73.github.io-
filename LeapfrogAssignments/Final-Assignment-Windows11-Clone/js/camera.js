@@ -1,5 +1,4 @@
-
-//camera
+//Handles DOM operation for Camera Application
 let cameradiv = document.getElementsByClassName("cameradiv")[0];
 cameradiv.style.width = "100%";
 let camera = document.createElement("video");
@@ -11,46 +10,44 @@ capturebtn.innerHtml = "SnapPhoto";
 
 cameradiv.appendChild(camera);
 
-
-
 let cambtn = document.getElementsByClassName("camera")[0];
 let closecam = document.getElementsByClassName("close")[1];
 let maximizecam = document.getElementsByClassName("maximize")[1];
 
-cambtn.addEventListener("dblclick",function(){
-    open(cameradiv);
-    initCamera();
-})
+//open Camera
 
-closecam.addEventListener("click",function(){
-    closeFunc(cameradiv);
-    closeCamera();
-})
+cambtn.addEventListener("dblclick", function () {
+  open(cameradiv);
+  initCamera();
+});
+//close btn for camera div
+closecam.addEventListener("click", function () {
+  closeFunc(cameradiv);
+  closeCamera();
+});
 
-maximizecam.addEventListener("click",function(){maximizeFunc(cameradiv)})
-
-
+maximizecam.addEventListener("click", function () {
+  maximizeFunc(cameradiv);
+});
 
 //function to initialize camera of Device
-function initCamera(){
-var video = document.getElementById('cam');
-if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia){
-    navigator.mediaDevices.getUserMedia({video: true})
-        .then(function(stream){
-            video.srcObject = stream;
-            video.play();
-
-        })
-}}
+function initCamera() {
+  var video = document.getElementById("cam");
+  if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+    navigator.mediaDevices
+      .getUserMedia({ video: true })
+      .then(function (stream) {
+        video.srcObject = stream;
+        video.play();
+      });
+  }
+}
 //function to close Camera
-function closeCamera(){
-    var video = document.getElementById('cam');
-    if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia){
-        navigator.mediaDevices.getUserMedia({video: true})
-            .then(function(){
-                video.srcObject = null;
-    
-            })
-    }}
-
-
+function closeCamera() {
+  var video = document.getElementById("cam");
+  if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+    navigator.mediaDevices.getUserMedia({ video: true }).then(function () {
+      video.srcObject = null;
+    });
+  }
+}

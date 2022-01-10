@@ -95,19 +95,19 @@ function generatePassword(lower, upper, number, symbol, length) {
 }
 
 function getRandomLower() {
-    return String.fromCharCode(Math.floor(Math.random() * 26) + 97)  //A = 65  a-97 Gets alphabets
+    return String.fromCharCode(Math.floor(Math.random() * 26) + 97)  // Gets random alphabet from A-Z , a is 97
 }
 
 function getRandomUpper() {
-    return String.fromCharCode(Math.floor(Math.random() * 26) + 65);
+    return String.fromCharCode(Math.floor(Math.random() * 26) + 65); //Gets random Alphabet from a-z , a is 65
 
 }
 
 function getRandomNumber() {
-    return Math.floor(Math.random() * 10); //gives random value between 0 to 9
+    return Math.floor(Math.random() * 10); //gives random int value between 0 to 9
 }
 
 function getRandomSymbol() {
     const symbols = '!@#$%^&*(){}[]=<>,.|/``~';
-    return symbols[Math.floor(Math.random() * symbols.length)];
+    return symbols[Math.floor(Math.random() * symbols.length)]; //gets random symol from defined list 
 }
