@@ -17,30 +17,22 @@ let cambtn = document.getElementsByClassName("camera")[0];
 let closecam = document.getElementsByClassName("close")[1];
 let maximizecam = document.getElementsByClassName("maximize")[1];
 
-cambtn.addEventListener("dblclick",()=>{
-    cameradiv.style.display = "block";
-    openCamera();
-    
+cambtn.addEventListener("dblclick",function(){
+    open(cameradiv);
+    initCamera();
 })
 
-closecam.addEventListener("click",()=>{
-    cameradiv.style.display = "none";
-   closeCamera();
-   
+closecam.addEventListener("click",function(){
+    closeFunc(cameradiv);
+    closeCamera();
 })
 
-maximizecam.addEventListener("click",()=>{
-    if(cameradiv.style.width == "100%"){
-    cameradiv.style.width = "50%";
-    cameradiv.style.height = "60%";
-}else{
-    cameradiv.style.width = "100%";
-    cameradiv.style.height = "44rem";
-}
+maximizecam.addEventListener("click",function(){maximizeFunc(cameradiv)})
 
-})
 
-function openCamera(){
+
+//function to initialize camera of Device
+function initCamera(){
 var video = document.getElementById('cam');
 if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia){
     navigator.mediaDevices.getUserMedia({video: true})
@@ -50,7 +42,7 @@ if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia){
 
         })
 }}
-
+//function to close Camera
 function closeCamera(){
     var video = document.getElementById('cam');
     if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia){

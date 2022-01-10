@@ -1,32 +1,30 @@
 //app layout 
 let randonpwdDiv = document.getElementsByClassName("pwdGen-div")[0];
-randonpwdDiv.style.width = "84%";
+randonpwdDiv.style.width = "100%";
 
 
+
+//handling open close maximize buttone
 let pwdbtn = document.getElementsByClassName("pwdGen")[0];
 let closepwd = document.getElementsByClassName("close")[3];
 let maximizepwd = document.getElementsByClassName("maximize")[3];
 
-
-
-
-
-
-
-
-pwdbtn.addEventListener("dblclick",()=>{
-    randonpwdDiv.style.display = "block";
+pwdbtn.addEventListener("dblclick",function(){
+    open(randonpwdDiv);
+})
+maximizepwd.addEventListener("click",function(){
+    maximizeFunc(randonpwdDiv);
 })
 
-closepwd.addEventListener("click", ()=>{
-    randonpwdDiv.style.display = "none";
+closepwd.addEventListener("click",function(){
+    closeFunc(randonpwdDiv);
 })
 
 
 
 
 
-
+//actual functions/logics for random password generation
 
 const resultEl = document.querySelector(".result");
 const lengthEl = document.querySelector(".length");
@@ -97,7 +95,7 @@ function generatePassword(lower, upper, number, symbol, length) {
 }
 
 function getRandomLower() {
-    return String.fromCharCode(Math.floor(Math.random() * 26) + 97)  //A = 65  a-97
+    return String.fromCharCode(Math.floor(Math.random() * 26) + 97)  //A = 65  a-97 Gets alphabets
 }
 
 function getRandomUpper() {
@@ -106,7 +104,7 @@ function getRandomUpper() {
 }
 
 function getRandomNumber() {
-    return +String.fromCharCode(Math.floor(Math.random() * 10) + 48);  // 0 - 48
+    return Math.floor(Math.random() * 10); //gives random value between 0 to 9
 }
 
 function getRandomSymbol() {

@@ -518,7 +518,7 @@ svg{
     height: 44rem;
     /* width: 80%; */
     background-color: #f0dfdf;
-    margin-left: 15%;
+    /* margin-left: 15%; */
     display: none;
     
 }
@@ -595,12 +595,8 @@ ul li{
   /* password gen */
 
   .pwdGen-div{
+    top: 0;
     position: absolute;
-    top: 0px;
-    /* height: 80%; */
-    left: 5%;
-    /* width: 94%; */
-    
     background-color: rgb(8, 0, 0);
     display: none;
     
