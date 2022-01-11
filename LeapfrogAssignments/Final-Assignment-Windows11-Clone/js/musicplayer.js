@@ -1,6 +1,6 @@
 
 const musicdiv = document.getElementsByClassName("musicdiv")[0];
-const xxx = document.getElementById("1");
+
 musicdiv.style.width = "100%";
 let musicbtn = document.getElementsByClassName("music")[0];
 let closemusic = document.getElementsByClassName("close")[4];
@@ -24,6 +24,7 @@ musicStartmenu.addEventListener("click",function(){
 //close btn for music player
 closemusic.addEventListener("click", function () {
     closeFunc(musicdiv);
+    track.pause();
     
     
   });
@@ -57,18 +58,24 @@ let prev = document.getElementById("prev-track");
 trackIndex = 0;
 
 tracks = [
-  "https://res.cloudinary.com/cbanlawi/video/upload/v1614140796/HarryStyles-WatermelonSugar_f5471p.mp3",
-  "https://res.cloudinary.com/cbanlawi/video/upload/v1614144520/Justin_Bieber-Yummy_vercib.mp3",
+  "./music/demons.mp3",
+  "./music/middlechild.mp3",
+  "./music/stressedout.mp3",
+  "./music/numb.mp3",
+  
 
-  "https://res.cloudinary.com/cbanlawi/video/upload/v1614186705/Loud_Luxury_ft._Brando_-_Body_fm7cdr.mp3"
+
 ];
 thumbnails = [
-  "https://i.ibb.co/7RhfRBZ/Fine-Line-Harry-Styles.jpg",
-  "https://i.ibb.co/dkDC9CP/Justin-Bieber-Song-Cover-Art.jpg",
-  "https://i.ibb.co/371t9Md/Loud-Luxury-Song-Cover-Art.jpg"
+  "https://i1.sndcdn.com/artworks-000206628688-vv8i37-t500x500.jpg",
+  "https://i1.sndcdn.com/artworks-000486290040-93nkso-t500x500.jpg",
+  "https://i1.sndcdn.com/artworks-000202188614-hljd01-t500x500.jpg",
+  "https://i.ytimg.com/vi/jV4ASCadZ4s/maxresdefault.jpg",
+  
+
 ];
-trackArtists = ["Harry Styles", "Justin Bieber", "Loud Luxury ft. Brando"];
-trackTitles = ["Watermelon Sugar", "Yummy", "Body"];
+trackArtists = ["Imagine Dragons", "J COle", "21 Pilots","Linkin Park","Nepathya"];
+trackTitles = ["Demons", "MiddleChild", "StressedOut","Numb","Bheda Ko OOn"];
 
 let playing = true;
 
@@ -92,9 +99,8 @@ function pausePlay() {
   }
 }
 
-
-play.addEventListener("click", play);
-pause.addEventListener("click", pause);
+play.addEventListener("click", pausePlay);
+pause.addEventListener("click", pausePlay);
 
 track.addEventListener("ended", nextTrack);
 

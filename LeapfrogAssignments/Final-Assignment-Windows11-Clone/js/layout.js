@@ -13,7 +13,7 @@ startmenu.style.top = "125%";
 iconsDiv.className = "icons-div";
 //sets style property for div accordingly to screen dimensions of device
 if (window.innerHeight >= size14) {
-  iconsDiv.style.left = "9%";
+  iconsDiv.style.left = "6%";
 } else {
   iconsDiv.style.left = "4%";
 }
