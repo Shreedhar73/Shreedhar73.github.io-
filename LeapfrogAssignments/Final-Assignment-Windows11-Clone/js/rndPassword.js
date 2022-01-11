@@ -6,16 +6,26 @@ randonpwdDiv.style.width = "100%";
 
 //handling open close maximize buttone
 let pwdbtn = document.getElementsByClassName("pwdGen")[0];
+let pwdbtnStartmenu = document.getElementById("5");
 let closepwd = document.getElementsByClassName("close")[3];
 let maximizepwd = document.getElementsByClassName("maximize")[3];
 
+
+//double click to open password generator
 pwdbtn.addEventListener("dblclick",function(){
     open(randonpwdDiv);
 })
+
+pwdbtnStartmenu.addEventListener("click",function(){
+    open(randonpwdDiv);
+    startmenuTransition();
+  })
+
+//maximize 
 maximizepwd.addEventListener("click",function(){
     maximizeFunc(randonpwdDiv);
 })
-
+//close
 closepwd.addEventListener("click",function(){
     closeFunc(randonpwdDiv);
 })

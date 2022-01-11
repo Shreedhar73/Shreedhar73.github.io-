@@ -3,6 +3,7 @@ let notesdiv = document.getElementsByClassName("notesdiv")[0];
 notesdiv.style.width = "100%";
 
 let notesbtn = document.getElementsByClassName("notes")[0];
+let notesStartmenu = document.getElementById("4");
 let closenotes = document.getElementsByClassName("close")[2];
 let maximizenotes = document.getElementsByClassName("maximize")[2];
 
@@ -11,6 +12,12 @@ let maximizenotes = document.getElementsByClassName("maximize")[2];
 notesbtn.addEventListener("dblclick",function(){
  open(notesdiv);
 })
+
+notesStartmenu.addEventListener("click",function(){
+    open(notesdiv);
+   
+    startmenuTransition();
+  })
 
 //close notes app 
 closenotes.addEventListener("click",function(){

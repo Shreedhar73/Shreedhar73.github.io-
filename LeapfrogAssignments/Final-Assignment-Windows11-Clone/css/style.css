@@ -188,9 +188,9 @@ svg {
   background-size: cover;
 }
 
-.vscodeI {
+.music {
   /* position: relative; */
-  background-image: url("../img/vscode.png");
+  background-image: url("../img/music.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -589,24 +589,25 @@ input[type="checkbox"] {
 
 .musicdiv{
   top: 0;
+  /* width: 100%; */
   position: absolute;
   background-color: rgb(8, 0, 0);
-  /* display: none; */
+  display: none;
 }
 
 
 
 #background {
   object-fit: cover;
-  height: 100vh;
-  width: 100vw;
+  height: 50%;
+  width: 50%;
   margin: auto;
-  top: 0;
+  /* top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: 0; */
   filter: blur(7px);
-  z-index: -1;
+  z-index: 1;
 }
 
 .outer-container {

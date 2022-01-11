@@ -34,3 +34,22 @@ function maximizeFunc(x){
     body.style.filter = "brightness(0%)";
 
 }
+
+//handles transitions for startmenu
+
+function startmenuTransition(){
+    if (startmenu.style.top == "125%") {
+      //sets style property for div accordingly to screen dimensions of device
+      if (window.innerHeight >= size14) {
+        startmenu.style.top = "15%";
+      } else {
+        startmenu.style.top = "4.8%";
+      }
+      startbtn.style.color = "rgb(14,13,13)";
+      startbtn.style.boxShadow = "0 5px 15px rgba(15,125,228,0.5)";
+    } else {
+      startmenu.style.top = "125%";
+      startbtn.style.boxShadow = "0 5px 15px transparent";
+    }
+  
+  }

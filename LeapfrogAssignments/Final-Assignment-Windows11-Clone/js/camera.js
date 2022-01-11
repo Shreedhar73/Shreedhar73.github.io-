@@ -11,6 +11,7 @@ capturebtn.innerHtml = "SnapPhoto";
 cameradiv.appendChild(camera);
 
 let cambtn = document.getElementsByClassName("camera")[0];
+let cameraStartmenu = document.getElementById("2");
 let closecam = document.getElementsByClassName("close")[1];
 let maximizecam = document.getElementsByClassName("maximize")[1];
 
@@ -20,6 +21,12 @@ cambtn.addEventListener("dblclick", function () {
   open(cameradiv);
   initCamera();
 });
+
+cameraStartmenu.addEventListener("click",function(){
+  open(cameradiv);
+  initCamera();
+  startmenuTransition();
+})
 //close btn for camera div
 closecam.addEventListener("click", function () {
   closeFunc(cameradiv);

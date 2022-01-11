@@ -3,32 +3,38 @@
 //windows icons list
 
 const iconList = [
-  { id: 1, src: "img/icons8-microsoft-edge-48.png", name: "edge" },
-  { id: 2, src: "img/icons8-microsoft-word-2019-50.png", name: "Word" },
+  { id: 1, 
+    src: "img/thispc.png",
+    name: "Folder" 
+  },
+  { id: 2, 
+    src: "img/camera.png", 
+    name: "Camera" 
+  },
   {
     id: 3,
-    src: "img/icons8-microsoft-excel-2019-50.png",
-    name: "Excel",
+    src: "img/music.png",
+    name: "Music",
   },
   {
     id: 4,
-    src: "img/icons8-mail-50.png",
-    name: "Mail",
+    src: "img/notes.png",
+    name: "Notes",
   },
   {
     id: 5,
-    src: "img/icons8-calendar-50.png",
-    name: "Calendar",
+    src: "img/password.png",
+    name: "Password Gen",
   },
   {
     id: 6,
-    src: "img/icons8-microsoft-store-50.png",
-    name: "Store",
+    src: "img/icons8-photos-50.png",
+    name: "Photos",
   },
   {
     id: 7,
-    src: "img/icons8-photos-50.png",
-    name: "Photos",
+    src: "img/icons8-microsoft-store-50.png",
+    name: "Store",
   },
   {
     id: 8,
@@ -91,3 +97,10 @@ iconList.forEach((element) => {
   windowsdiv.append(windowsImg, iconsName);
   iconsDiv.append(windowsdiv);
 });
+
+let folderStartmenu = document.getElementById("1");
+folderStartmenu.addEventListener("click",function(){
+  open(folder);
+  startmenuTransition();
+})
+

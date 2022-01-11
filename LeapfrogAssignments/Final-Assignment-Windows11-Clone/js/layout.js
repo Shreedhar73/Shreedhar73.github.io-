@@ -34,21 +34,11 @@ powerDiv.appendChild(powerOff);
 searchDiv.appendChild(searchField);
 startmenu.append(searchDiv, iconsDiv, powerDiv);
 
-startbtn.addEventListener("click", () => {
-  if (startmenu.style.top == "125%") {
-    //sets style property for div accordingly to screen dimensions of device
-    if (window.innerHeight >= size14) {
-      startmenu.style.top = "15%";
-    } else {
-      startmenu.style.top = "4.8%";
-    }
-    startbtn.style.color = "rgb(14,13,13)";
-    startbtn.style.boxShadow = "0 5px 15px rgba(15,125,228,0.5)";
-  } else {
-    startmenu.style.top = "125%";
-    startbtn.style.boxShadow = "0 5px 15px transparent";
-  }
+startbtn.addEventListener("click", function(){
+  startmenuTransition();
 });
+
+
 
 //shutdown
 powerOff.addEventListener("click", function () {
@@ -97,14 +87,21 @@ utilsbtn.addEventListener("click", () => {
 });
 
 let folder = document.getElementsByClassName("folder")[0];
+
 folder.style.width = "100%";
 let mypc = document.getElementsByClassName("mypc")[0];
+
+
 let close = document.getElementsByClassName("close")[0];
 let maximize = document.getElementsByClassName("maximize")[0];
 
 mypc.addEventListener("dblclick", function () {
   open(folder);
+  console.log(folderStartmenu);
 });
+// folderStartmenu.addEventListener("click",function(){
+//   open(folder);
+// });
 
 close.addEventListener("click", function () {
   closeFunc(folder);
