@@ -18,9 +18,9 @@ function maximizeFunc(x){
       x.style.left = "20%";
   }else{
       if(window.innerHeight >= size14){
-        x.style.height = "44rem";
+        x.style.height = "44.3rem";
       }else{
-        x.style.height = "38.5rem";
+        x.style.height = "38.78rem";
       }
       x.style.width = "100%";
      

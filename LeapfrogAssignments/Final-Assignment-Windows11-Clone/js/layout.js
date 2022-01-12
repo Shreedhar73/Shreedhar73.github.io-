@@ -1,15 +1,16 @@
 const size14 = 655; // screensize for 14inch devices
 
 //setting up app height for 14inch devices
-
+function appHeight(){
 for(i = 0 ;i<6; i++){
 let appHeight = document.getElementsByClassName("fsize")[i];
 if(window.innerHeight>=655){
-  appHeight.style.height = "44rem";
+  appHeight.style.height = "44.3rem";
 }else{
-  appHeight.style.height ="38.5rem";
+  appHeight.style.height ="38.78rem";
 }}
-
+}
+appHeight();
 
 let body = document.querySelector("body");
 
