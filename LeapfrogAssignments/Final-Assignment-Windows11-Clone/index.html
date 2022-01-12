@@ -4,15 +4,13 @@
     <meta charset="UTF-8" />
     <title>Windows 11 - Clone</title>
     <link rel="icon" href ="./img/favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         rel="stylesheet"
         href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
         integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
         crossorigin="anonymous"
       />
+    <link rel="stylesheet" href="./css/reset.css"/>
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
@@ -275,12 +273,6 @@
           </div>
         </div>
       </div>
-     
-      
-
-      </div>
-     
-     
     </div>
     <!-- camera app -->
     <div class="cameradiv fsize">
@@ -332,17 +324,13 @@
           </div>
         </div>
         
-        <div class="note-list">
-          
-        </div>
-        
+        <div class="note-list"> </div>
+
         <button type="button" class = "btn" id= "delete-all-btn">
           <span><i class="fas fa-trash"></i></span>
           Delete All
         </button>
       </div>
-
-     
     </div>
 
    
@@ -376,7 +364,7 @@
         <div class="set-container">
             <div class="setup">
                 <label>Password length</label>
-                <input type="number" class="length" min="2" max="15" value="15" />
+                <input type="number" class="length" min="2" max="16" value="8" />
             </div>
             <div class="setup">
                 <label>Include uppercase letters</label>
@@ -472,8 +460,8 @@
                     <li>Help</li>
                 </ul>
             </div>
-            <div class="taskbar-music taskbarApp">
-              <div class="name">Music Player</div>
+            <div class="taskbar-vs taskbarApp">
+              
               <div class="right-icons">
                 <div class="minimize icon">
                   <img src="./img/minimize.png" alt="minimize" />
@@ -518,7 +506,7 @@
   </body>
   <script src="./js/layout.js"></script>
   <script src="./js/startmenu.js"></script>
-  <script src="./js/maxclose.js"></script>
+  <script src="./js/btnevents.js"></script>
   <script src="./js/datetime.js"></script>
   <script src="./js/brightness.js"></script>
   <script src="./js/camera.js"></script>

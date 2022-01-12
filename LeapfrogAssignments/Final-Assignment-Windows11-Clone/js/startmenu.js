@@ -4,7 +4,7 @@
 
 const iconList = [
   { id: 1, 
-    src: "img/thispc.png",
+    src: "img/thispc.png", 
     name: "Folder" 
   },
   { id: 2, 
@@ -98,9 +98,11 @@ iconList.forEach((element) => {
   iconsDiv.append(windowsdiv);
 });
 
+//handling folder icon form start menu
+
 let folderStartmenu = document.getElementById("1");
-folderStartmenu.addEventListener("click",function(){
+
+folderStartmenu.addEventListener("click", function () {
   open(folder);
   startmenuTransition();
-})
-
+});

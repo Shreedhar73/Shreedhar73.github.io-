@@ -7,24 +7,23 @@ let vsStartmenu = document.getElementById("6");
 let closevs = document.getElementsByClassName("close")[5];
 let maximizevs = document.getElementsByClassName("maximize")[5];
 
-
 //double click to open
-vsbtn.addEventListener("dblclick",function(){
- open(vsdiv);
-})
+vsbtn.addEventListener("dblclick", function () {
+  open(vsdiv);
+});
 
-vsStartmenu.addEventListener("click",function(){
-    open(vsdiv);
-   
-    startmenuTransition();
-  })
+vsStartmenu.addEventListener("click", function () {
+  open(vsdiv);
 
-//close notes app 
-closevs.addEventListener("click",function(){
-    closeFunc(vsdiv)
+  startmenuTransition();
+});
+
+//close notes app
+closevs.addEventListener("click", function () {
+  closeFunc(vsdiv);
 });
 
 //maximize restore notes app
-maximizevs.addEventListener("click",function(){
-    maximizeFunc(vsdiv)
+maximizevs.addEventListener("click", function () {
+  maximizeFunc(vsdiv);
 });

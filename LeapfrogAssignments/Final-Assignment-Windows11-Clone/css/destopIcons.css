@@ -1,0 +1,51 @@
+
+.dicon {
+    height: 50px;
+    width: 50px;
+  
+    margin-bottom: 15px;
+  }
+  .dicon:hover {
+    background-color: rgb(71, 65, 65);
+    opacity: 0.8;
+    display: block;
+  }
+  
+  .recyclebin {
+    position: relative;
+    background-image: url("../img/recyclebinicon.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .mypc {
+    position: relative;
+    background-image: url("../img/thispc.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .camera {
+    position: relative;
+    background-image: url("../img/camera.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .music {
+    position: relative;
+    background-image: url("../img/music.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .notes {
+    background-image: url("../img/notes.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .pwdGen {
+    background-image: url("../img/password.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  

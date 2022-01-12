@@ -1,0 +1,97 @@
+
+.startmenu {
+    border: 1px solid #464242;
+    position: absolute;
+    display: grid;
+  
+    grid-auto-rows: auto auto auto;
+  
+    left: 30%;
+    width: 42.5%;
+    height: 35rem;
+    background-color: rgb(34, 34, 73);
+    opacity: 0.91;
+  
+    border-radius: 15px;
+  
+    text-align: center;
+    align-items: center;
+    transition: top 1s;
+  }
+  
+  .search-div {
+    position: absolute;
+    width: 100%;
+    padding: 20px;
+    top: 0%;
+  }
+  
+  .search-field {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    border-radius: 6px;
+    background: black;
+    opacity: 0.6;
+    color: white;
+    border-bottom: 2px solid #ffffff;
+  }
+  .search-field::placeholder {
+    color: white;
+  }
+  
+  .icons-div {
+    margin: 0 8px;
+    position: absolute;
+    top: 15%;
+  
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 1.5em;
+  }
+  
+  .windows-div {
+    position: relative;
+    height: 120%;
+    width: 120%;
+  }
+  .windows-div:hover {
+    background-color: #737375;
+    opacity: 0.7;
+    border-radius: 6px;
+  }
+  .windows-icons {
+    position: relative;
+    top: 16%;
+    max-width: 70%;
+    max-height: 70%;
+  }
+  
+  .icons-name {
+    position: relative;
+    top: 10%;
+    color: #f7e9e9;
+    font-size: 0.8em;
+  }
+  
+  .power-div {
+    border-top: 1px solid #464242;
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    bottom: 0;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  
+  .powerOff {
+    position: relative;
+    top: 20%;
+    left: 85%;
+    background-image: url("../img/shutdown.png");
+  
+    background-color: rgb(202, 191, 191);
+    background-size: cover;
+    border-radius: 5px;
+    padding: 15px;
+  }

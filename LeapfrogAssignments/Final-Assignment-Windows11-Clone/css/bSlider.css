@@ -1,0 +1,39 @@
+/* css for brightness slider and its parent div */
+.utilsDiv {
+    position: relative;
+    margin-left: auto;
+    width: 22%;
+    height: 30rem;
+    background-color: rgb(34, 34, 73);
+    opacity: 0.91;
+    transition: left 1s;
+    border-radius: 15px;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .bSlider {
+    position: relative;
+    top: 90%;
+    margin: auto;
+    width: 70%;
+    background: #f3f3f3;
+    border-radius: 10px;
+    left: 25px;
+    padding: 5px;
+    height: 30px;
+  }
+  
+  .bSlider img {
+    position: relative;
+    float: left;
+    left: -40px;
+    bottom: 20px;
+  }
+  #brightness-range {
+    width: 100%;
+    background: #131212;
+    height: 5px;
+    outline: none;
+    cursor: pointer;
+  }
