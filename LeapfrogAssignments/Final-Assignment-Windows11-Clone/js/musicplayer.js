@@ -1,4 +1,3 @@
-
 const musicdiv = document.getElementsByClassName("musicdiv")[0];
 
 musicdiv.style.width = "100%";
@@ -8,39 +7,27 @@ let maximizemusic = document.getElementsByClassName("maximize")[4];
 
 let musicStartmenu = document.getElementById("3");
 
-
 //open music player
 musicbtn.addEventListener("dblclick", function () {
-    
-    open(musicdiv);
-    
-  });
+  open(musicdiv);
+});
 
-musicStartmenu.addEventListener("click",function(){
-    open(musicdiv);
-    startmenuTransition();
-  })
+musicStartmenu.addEventListener("click", function () {
+  open(musicdiv);
+  startmenuTransition();
+});
 
 //close btn for music player
 closemusic.addEventListener("click", function () {
-    closeFunc(musicdiv);
-    track.pause();
-    
-    
-  });
+  closeFunc(musicdiv);
+  track.pause();
+});
 
 //maximize button for music player
 
-maximizemusic.addEventListener("click",function(){
-    maximizeFunc(musicdiv);
-})
-
-
-
-
-
-
-
+maximizemusic.addEventListener("click", function () {
+  maximizeFunc(musicdiv);
+});
 
 const track = document.getElementById("track");
 const thumbnail = document.getElementById("thumbnail");
@@ -62,20 +49,21 @@ tracks = [
   "./music/middlechild.mp3",
   "./music/stressedout.mp3",
   "./music/numb.mp3",
-  
-
-
 ];
 thumbnails = [
   "https://i1.sndcdn.com/artworks-000206628688-vv8i37-t500x500.jpg",
   "https://i1.sndcdn.com/artworks-000486290040-93nkso-t500x500.jpg",
   "https://i1.sndcdn.com/artworks-000202188614-hljd01-t500x500.jpg",
   "https://i1.sndcdn.com/artworks-000105604285-me2956-t500x500.jpg",
-  
-
 ];
-trackArtists = ["Imagine Dragons", "J COle", "21 Pilots","Linkin Park","Nepathya"];
-trackTitles = ["Demons", "MiddleChild", "StressedOut","Numb","Bheda Ko OOn"];
+trackArtists = [
+  "Imagine Dragons",
+  "J COle",
+  "21 Pilots",
+  "Linkin Park",
+  "Nepathya",
+];
+trackTitles = ["Demons", "MiddleChild", "StressedOut", "Numb", "Bheda Ko OOn"];
 
 let playing = true;
 

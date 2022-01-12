@@ -1,15 +1,14 @@
 .cameradiv {
-    position: absolute;
-    top: 0px;
-    background-color: rgb(8, 0, 0);
-    display: none;
-  }
-  
-  #cam {
-    position: absolute;
-    color: red;
-  
-    top: 10%;
-    width: 100%;
-    height: 90%;
-  }
+  position: absolute;
+  top: 0px;
+  background-color: rgb(8, 0, 0);
+  display: none;
+}
+
+#cam {
+  position: absolute;
+  color: red;
+  top: 10%;
+  width: 100%;
+  height: 90%;
+}

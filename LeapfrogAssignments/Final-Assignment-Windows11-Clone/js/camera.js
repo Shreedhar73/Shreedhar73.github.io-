@@ -18,11 +18,11 @@ cambtn.addEventListener("dblclick", function () {
   initCamera();
 });
 
-cameraStartmenu.addEventListener("click",function(){
+cameraStartmenu.addEventListener("click", function () {
   open(cameradiv);
   initCamera();
   startmenuTransition();
-})
+});
 //close btn for camera div
 closecam.addEventListener("click", function () {
   closeFunc(cameradiv);
@@ -53,5 +53,4 @@ function closeCamera() {
   video.pause();
   video.srcObject = null;
   localStream.getTracks()[0].stop();
-
 }
