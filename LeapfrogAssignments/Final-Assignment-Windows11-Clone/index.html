@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <title>Windows 11 - Clone</title>
+    <link rel="icon" href ="./img/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         rel="stylesheet"
         href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
@@ -54,7 +58,7 @@
             />
             <circle cx="11" cy="11" r="9" opacity=".35" />
           </svg>
-          <!-- <i class="fal fa-search"></i> -->
+          
         </div>
         <!-- search icon button rendering ends here -->
 
@@ -88,6 +92,8 @@
         </div>
         <!-- switch icon button rendering ends here -->
 
+
+        <!-- store icon button rendering start here -->
         <div class="microsoftbtn btnhover">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -254,8 +260,9 @@
       <div class = "pwdGen dicon"></div>
     </div>
     <div class="folder fsize">
-      <div class="taskbar-mypc">
+      <div class="taskbar-mypc taskbarApp">
         <div class="name">File Explorer</div>
+        
         <div class="right-icons">
           <div class="minimize icon">
             <img src="./img/minimize.png" alt="minimize" />
@@ -268,10 +275,16 @@
           </div>
         </div>
       </div>
+     
+      
+
+      </div>
+     
+     
     </div>
     <!-- camera app -->
     <div class="cameradiv fsize">
-      <div class="taskbar-camera">
+      <div class="taskbar-camera taskbarApp">
         <div class="name">Camera</div>
         <div class="right-icons">
           <div class="minimize icon">
@@ -288,7 +301,7 @@
     </div>
   <!-- notes app -->
     <div class="notesdiv fsize">
-      <div class="taskbar-notes">
+      <div class="taskbar-notes taskbarApp">
         <div class="name">Notes</div>
         <div class="right-icons">
           <div class="minimize icon">
@@ -303,16 +316,39 @@
         </div>
       </div>
 
-      <div class="textField">
-        <textarea type="text" id="autocomplete" placeholder="Type a Word ......."></textarea>
-        <ul id="results"></ul>
-       </div>
+      <!-- notes app -->
+
+      <div class="note">
+           
+        <div class="note-input">
+          <h3>Add A New Note</h3>
+          <div class="note-wrapper">
+            <input type="text" id = "note-title" placeholder="Title of your note">
+            <textarea  id="note-content" placeholder="Write your note here...." rows="5"></textarea>
+            <button id="add-note-btn" class="btn" type = "button" >
+              <span><i class="fas fa-plus"></i></span>
+              Add Note
+            </button>
+          </div>
+        </div>
+        
+        <div class="note-list">
+          
+        </div>
+        
+        <button type="button" class = "btn" id= "delete-all-btn">
+          <span><i class="fas fa-trash"></i></span>
+          Delete All
+        </button>
+      </div>
+
+     
     </div>
 
    
     <!-- Password generator app -->
     <div class="pwdGen-div fsize">
-      <div class="taskbar-pwdGen">
+      <div class="taskbar-pwdGen taskbarApp">
         <div class="name">Random Password Generator</div>
         <div class="right-icons">
           <div class="minimize icon">
@@ -368,7 +404,7 @@
 
    <!-- musicplayer app -->
    <div class="musicdiv fsize">
-    <div class="taskbar-music">
+    <div class="taskbar-music taskbarApp">
       <div class="name">Music Player</div>
       <div class="right-icons">
         <div class="minimize icon">
@@ -417,6 +453,67 @@
   </div>
 
 
+  <!-- vs Code -->
+  <div class="vsCodediv fsize">
+    <div class="taskbar-vsCode taskbarApp">
+      
+      <div class="Container-Vs">
+        <div class="Nav_bar">
+            <div class="Right_nav">
+                <ul>
+                <img src="https://img.icons8.com/color/48/000000/visual-studio-code-2019.png"/>
+                    <li>File</li>
+                    <li>Edit</li>
+                    <li>Selection</li>
+                    <li>View</li>
+                    <li>Go</li>
+                    <li>Run</li>
+                    <li>Terminal</li>
+                    <li>Help</li>
+                </ul>
+            </div>
+            <div class="taskbar-music taskbarApp">
+              <div class="name">Music Player</div>
+              <div class="right-icons">
+                <div class="minimize icon">
+                  <img src="./img/minimize.png" alt="minimize" />
+                </div>
+                <div class="maximize icon">
+                  <img src="./img/maximize.png" alt="close" />
+                </div>
+                <div class="close icon">
+                  <img src="./img/close.png" alt="close" />
+                </div>
+              </div>
+            </div>
+            
+        </div>
+    </div>
+    </div>
+
+    <div class="content">
+      
+      <div class="Folder_bar">
+          <span><label>EXPLORER</label></span><span><i class="bi bi-three-dots"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+              <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+            </svg></i></span>
+            <div class="Folder_btn">
+                <button class="btnfol">- NO FOLDER OPENED</button><br>
+                <button class="btnfol">- OUTLINE</button>
+            </div>
+      </div>
+      <div class="textField">
+          <textarea type="text" id="autocomplete" cols="20" rows="10"></textarea>
+          <ul id="results"></ul>
+      </div>
+  </div>
+  </div>
+
+  
+
+
+
+
 
   </body>
   <script src="./js/layout.js"></script>
@@ -429,5 +526,6 @@
   <script src="./js/autocomplete.js"></script>
   <script src="./js/rndPassword.js"></script>
   <script src="./js/musicplayer.js"></script>
+  <script src="./js/vscode.js"></script>
   
 </html>

@@ -28,8 +28,8 @@ const iconList = [
   },
   {
     id: 6,
-    src: "img/icons8-photos-50.png",
-    name: "Photos",
+    src: "img/vscode.png",
+    name: "VS Code",
   },
   {
     id: 7,
