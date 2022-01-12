@@ -4,10 +4,6 @@ cameradiv.style.width = "100%";
 let camera = document.createElement("video");
 camera.id = "cam";
 
-let capturebtn = document.createElement("button");
-capturebtn.id = "snap";
-capturebtn.innerHtml = "SnapPhoto";
-
 cameradiv.appendChild(camera);
 
 let cambtn = document.getElementsByClassName("camera")[0];
@@ -38,6 +34,7 @@ maximizecam.addEventListener("click", function () {
 });
 
 //function to initialize camera of Device
+var localStream;
 function initCamera() {
   var video = document.getElementById("cam");
   if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
@@ -45,6 +42,7 @@ function initCamera() {
       .getUserMedia({ video: true })
       .then(function (stream) {
         video.srcObject = stream;
+        localStream = stream;
         video.play();
       });
   }
@@ -52,9 +50,8 @@ function initCamera() {
 //function to close Camera
 function closeCamera() {
   var video = document.getElementById("cam");
-  if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
-    navigator.mediaDevices.getUserMedia({ video: true }).then(function () {
-      video.srcObject = null;
-    });
-  }
+  video.pause();
+  video.srcObject = null;
+  localStream.getTracks()[0].stop();
+
 }

@@ -102,7 +102,7 @@ function validateInput(title, content){
     title.classList.remove("warning");
     content.classList.remove("warning");
     
-  }, 1600);
+  }, 2000);
 }
 
 

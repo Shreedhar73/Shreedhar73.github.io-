@@ -70,7 +70,7 @@ thumbnails = [
   "https://i1.sndcdn.com/artworks-000206628688-vv8i37-t500x500.jpg",
   "https://i1.sndcdn.com/artworks-000486290040-93nkso-t500x500.jpg",
   "https://i1.sndcdn.com/artworks-000202188614-hljd01-t500x500.jpg",
-  "https://i.ytimg.com/vi/jV4ASCadZ4s/maxresdefault.jpg",
+  "https://i1.sndcdn.com/artworks-000105604285-me2956-t500x500.jpg",
   
 
 ];

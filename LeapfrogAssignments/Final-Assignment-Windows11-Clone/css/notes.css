@@ -16,7 +16,7 @@
   }
   
   .note-input h3 {
-    color: rgb(116, 104, 104);
+    color: rgb(121, 105, 105);
   }
   
   .note-wrapper {
@@ -27,11 +27,11 @@
   #note-title,
   #note-content {
     width: 100%;
-    border: 2px solid rgba(0, 0, 0, 0.2);
+    border: 2px solid rgba(121, 12, 12, 0.2);
     font-size: 1.05rem;
     padding: 0.55rem;
     margin-bottom: 0.8rem;
-    border-radius: 2rem;
+    border-radius: 0.5rem;
   }
   
   #note-content {
@@ -42,7 +42,7 @@
     color: rgb(27, 27, 27);
     padding: 0.55rem 0;
     width: 120px;
-    border-radius: 2px;
+    border-radius: 1rem;
     font-size: 1rem;
     cursor: pointer;
   }
@@ -59,7 +59,7 @@
     padding: 1.5rem;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 7px 0 rgba(212, 4, 4, 0.3);
   }
   .note-item h3 {
     margin-bottom: 1rem;
@@ -81,5 +81,6 @@
   
   /*** alert ***/
   .warning {
-    border-color: rgba(255, 111, 89, 0.8) !important;
+    border-color: rgba(236, 37, 6, 0.8) !important;
+    box-shadow: 5px 5px 5px 1px rgba(209, 25, 25, 0.2) !important;
   }

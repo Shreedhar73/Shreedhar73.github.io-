@@ -13,11 +13,11 @@
     height: 40%;
     width: 40%;
     margin: auto;
-    filter: blur(7px);
+    filter: blur(5px);
   }
   
   .outer-container {
-    display: flex;
+    left: 30%;
     justify-content: center;
     align-items: center;
     position: relative;
@@ -35,11 +35,9 @@
     right: 0;
     bottom: 0;
     overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
     border-radius: 10px;
-    box-shadow: 0 0 30px #f94c57;
+    box-shadow: 0 0 30px #262074;
   }
   
   #thumbnail {
@@ -49,15 +47,15 @@
     width: 100%;
     top: -10%;
     transition: 1s;
-    z-index: 3;
+    
   }
   
   .box {
     position: absolute;
     height: 45%;
     width: 100%;
-    background: linear-gradient(90deg, rgb(145, 145, 145), rgb(220, 220, 220));
-    z-index: 4;
+    background:rgb(20, 20, 20);
+   
     bottom: -10%;
     display: grid;
     grid-template-rows: 85px 25px 25px;
@@ -94,12 +92,11 @@
     justify-content: center;
     align-items: flex-start;
     padding-left: 5%;
-    /* border: 1px solid red; */
+    
   }
   
   #track-artist {
-    color: #f94c57;
-    font-family: "Lato", sans-serif;
+    color: #f0e9ea;
     font-weight: bold;
     font-size: 1.125rem;
     text-shadow: 0 0 15px white;
@@ -107,7 +104,6 @@
   
   #track-title {
     color: white;
-    font-family: "Lato", sans-serif;
     font-size: 1rem;
   }
   
@@ -161,6 +157,6 @@
   #durationTime {
     font-family: "Lato", sans-serif;
     font-size: 1rem;
-    color: #f94c57;
-    text-shadow: 0 0 15px white;
+    color: #f8f2f3;
+    
   }
