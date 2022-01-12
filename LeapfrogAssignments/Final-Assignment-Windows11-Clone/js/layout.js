@@ -1,6 +1,16 @@
 const size14 = 655; // screensize for 14inch devices
 
+//setting up app height for 14inch devices
+let appHeight = document.getElementsByClassName("fsize")[0];
+if(window.innerHeight>=655){
+  appHeight.style.height = "44rem";
+}else{
+  appHeight.style.height ="38.5rem";
+}
+
 let body = document.querySelector("body");
+
+
 
 //dom manipulation for start menu
 let startbtn = document.getElementsByClassName("windowbtn")[0];

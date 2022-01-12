@@ -9,14 +9,21 @@ function open(x){
 
 //maximize / restore
 function maximizeFunc(x){
+  
     if(x.style.width == "100%"){
+      
       x.style.width = "50%";
       x.style.height = "60%";
       x.style.transition = "left 0.6s,width 0.6s,height 0.6s";
       x.style.left = "20%";
   }else{
+      if(window.innerHeight >= size14){
+        x.style.height = "44rem";
+      }else{
+        x.style.height = "38.5rem";
+      }
       x.style.width = "100%";
-      x.style.height = "44rem";
+     
       x.style.left = "0%";
   }
  }
