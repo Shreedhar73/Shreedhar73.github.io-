@@ -70,9 +70,7 @@
   .textField textarea {
     height: 100%;
     width: 100%;
-    max-lines: 100;
     overflow: hidden;
-  
     background-color: rgb(44, 44, 63);
     background-image: url("../img/vscodeimg.png");
     background-repeat: no-repeat;
@@ -125,9 +123,9 @@
     position: relative;
     left: 10px;
     color: white;
-  
-    padding: 35px auto;
+    padding: 35px;
   }
+
   .bottom {
     position: relative;
     top: 15vh;
