@@ -42,7 +42,6 @@ body {
 
 svg {
   position: absolute;
-  box-shadow: 2px, 3px rgb(156, 154, 154);
   top: 15%;
   left: 20%;
   max-width: 100%;
